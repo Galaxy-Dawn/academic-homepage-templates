@@ -21,6 +21,33 @@ A collection of beautiful, responsive academic homepage templates for researcher
 | **Glass** | Modern glassmorphism with blur effects |
 | **SPA** | Single-page app style with sidebar navigation |
 
+## Preview
+
+### Academic
+| Dark | Light |
+|------|-------|
+| ![Academic Dark](assets/previews/academic-dark.png) | ![Academic Light](assets/previews/academic-light.png) |
+
+### Natural
+| Dark | Light |
+|------|-------|
+| ![Natural Dark](assets/previews/natural-dark.png) | ![Natural Light](assets/previews/natural-light.png) |
+
+### Editorial
+| Dark | Light |
+|------|-------|
+| ![Editorial Dark](assets/previews/editorial-dark.png) | ![Editorial Light](assets/previews/editorial-light.png) |
+
+### Glass
+| Dark | Light |
+|------|-------|
+| ![Glass Dark](assets/previews/glass-dark.png) | ![Glass Light](assets/previews/glass-light.png) |
+
+### SPA
+| Dark | Light |
+|------|-------|
+| ![SPA Dark](assets/previews/spa-dark.png) | ![SPA Light](assets/previews/spa-light.png) |
+
 ## Quick Start
 
 1. Choose a theme from the `themes/` directory
