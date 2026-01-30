@@ -37,29 +37,29 @@ A collection of beautiful, responsive academic homepage templates for researcher
 ## Preview
 
 ### Academic
-| Dark | Light |
-|------|-------|
-| ![Academic Dark](assets/previews/academic-dark.png) | ![Academic Light](assets/previews/academic-light.png) |
+| Light | Dark |
+|-------|------|
+| ![Academic Light](assets/previews/academic-light.png) | ![Academic Dark](assets/previews/academic-dark.png) |
 
 ### Natural
-| Dark | Light |
-|------|-------|
-| ![Natural Dark](assets/previews/natural-dark.png) | ![Natural Light](assets/previews/natural-light.png) |
+| Light | Dark |
+|-------|------|
+| ![Natural Light](assets/previews/natural-light.png) | ![Natural Dark](assets/previews/natural-dark.png) |
 
 ### Editorial
-| Dark | Light |
-|------|-------|
-| ![Editorial Dark](assets/previews/editorial-dark.png) | ![Editorial Light](assets/previews/editorial-light.png) |
+| Light | Dark |
+|-------|------|
+| ![Editorial Light](assets/previews/editorial-light.png) | ![Editorial Dark](assets/previews/editorial-dark.png) |
 
 ### Glass
-| Dark | Light |
-|------|-------|
-| ![Glass Dark](assets/previews/glass-dark.png) | ![Glass Light](assets/previews/glass-light.png) |
+| Light | Dark |
+|-------|------|
+| ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
 
 ### SPA
-| Dark | Light |
-|------|-------|
-| ![SPA Dark](assets/previews/spa-dark.png) | ![SPA Light](assets/previews/spa-light.png) |
+| Light | Dark |
+|-------|------|
+| ![SPA Light](assets/previews/spa-light.png) | ![SPA Dark](assets/previews/spa-dark.png) |
 
 ## Quick Start
 

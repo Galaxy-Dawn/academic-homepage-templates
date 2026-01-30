@@ -37,29 +37,29 @@
 ## 预览
 
 ### Academic（学术风）
-| 深色 | 浅色 |
+| 浅色 | 深色 |
 |------|------|
-| ![Academic Dark](assets/previews/academic-dark.png) | ![Academic Light](assets/previews/academic-light.png) |
+| ![Academic Light](assets/previews/academic-light.png) | ![Academic Dark](assets/previews/academic-dark.png) |
 
 ### Natural（自然风）
-| 深色 | 浅色 |
+| 浅色 | 深色 |
 |------|------|
-| ![Natural Dark](assets/previews/natural-dark.png) | ![Natural Light](assets/previews/natural-light.png) |
+| ![Natural Light](assets/previews/natural-light.png) | ![Natural Dark](assets/previews/natural-dark.png) |
 
 ### Editorial（编辑风）
-| 深色 | 浅色 |
+| 浅色 | 深色 |
 |------|------|
-| ![Editorial Dark](assets/previews/editorial-dark.png) | ![Editorial Light](assets/previews/editorial-light.png) |
+| ![Editorial Light](assets/previews/editorial-light.png) | ![Editorial Dark](assets/previews/editorial-dark.png) |
 
 ### Glass（玻璃风）
-| 深色 | 浅色 |
+| 浅色 | 深色 |
 |------|------|
-| ![Glass Dark](assets/previews/glass-dark.png) | ![Glass Light](assets/previews/glass-light.png) |
+| ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
 
 ### SPA（单页应用风）
-| 深色 | 浅色 |
+| 浅色 | 深色 |
 |------|------|
-| ![SPA Dark](assets/previews/spa-dark.png) | ![SPA Light](assets/previews/spa-light.png) |
+| ![SPA Light](assets/previews/spa-light.png) | ![SPA Dark](assets/previews/spa-dark.png) |
 
 ## 快速开始
 
