@@ -1,7 +1,7 @@
 # Academic Homepage Templates
 
 <p align="center">
-  <img src="https://img.shields.io/badge/themes-5-blue" alt="Themes">
+  <img src="https://img.shields.io/badge/themes-4-blue" alt="Themes">
   <img src="https://img.shields.io/badge/dark%20mode-supported-green" alt="Dark Mode">
   <img src="https://img.shields.io/badge/responsive-yes-orange" alt="Responsive">
   <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="License">
@@ -17,7 +17,7 @@ A collection of beautiful, responsive academic homepage templates for researcher
 
 | Feature | Description |
 |:-------:|-------------|
-| 🎨 | **5 Unique Themes** - Academic, Natural, Editorial, Glass, SPA |
+| 🎨 | **4 Unique Themes** - Academic, Natural, Editorial, Glass |
 | 🌓 | **Dark/Light Mode** - Toggle with smooth transitions |
 | 📱 | **Responsive Design** - Works on all devices |
 | ⚡ | **No Build Tools** - Pure HTML, CSS, JavaScript |
@@ -32,7 +32,6 @@ A collection of beautiful, responsive academic homepage templates for researcher
 | 🌿 **Natural** | Organic, warm | Creative academics |
 | 📰 **Editorial** | Magazine-style | Writers & journalists |
 | 💎 **Glass** | Glassmorphism | Modern tech researchers |
-| 🖥️ **SPA** | Sidebar navigation | Portfolio-style pages |
 
 ## Preview
 
@@ -56,11 +55,6 @@ A collection of beautiful, responsive academic homepage templates for researcher
 |-------|------|
 | ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
 
-### SPA
-| Light | Dark |
-|-------|------|
-| ![SPA Light](assets/previews/spa-light.png) | ![SPA Dark](assets/previews/spa-dark.png) |
-
 ## Quick Start
 
 1. Choose a theme from the `themes/` directory
@@ -81,8 +75,7 @@ academic-homepage-templates/
     │   └── script.js
     ├── natural/
     ├── editorial/
-    ├── glass/
-    └── spa/
+    └── glass/
 ```
 
 ## Customization

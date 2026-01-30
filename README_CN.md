@@ -1,7 +1,7 @@
 # 学术主页模板
 
 <p align="center">
-  <img src="https://img.shields.io/badge/主题-5个-blue" alt="Themes">
+  <img src="https://img.shields.io/badge/主题-4个-blue" alt="Themes">
   <img src="https://img.shields.io/badge/深色模式-支持-green" alt="Dark Mode">
   <img src="https://img.shields.io/badge/响应式-是-orange" alt="Responsive">
   <img src="https://img.shields.io/badge/许可证-MIT-brightgreen" alt="License">
@@ -17,7 +17,7 @@
 
 | 特性 | 说明 |
 |:----:|------|
-| 🎨 | **5 种独特主题** - Academic, Natural, Editorial, Glass, SPA |
+| 🎨 | **4 种独特主题** - Academic, Natural, Editorial, Glass |
 | 🌓 | **深色/浅色模式** - 平滑过渡切换 |
 | 📱 | **响应式设计** - 适配所有设备 |
 | ⚡ | **无需构建工具** - 纯 HTML, CSS, JavaScript |
@@ -32,7 +32,6 @@
 | 🌿 **Natural** | 自然温暖 | 创意型学者 |
 | 📰 **Editorial** | 杂志风格 | 作家和记者 |
 | 💎 **Glass** | 玻璃拟态 | 科技领域研究者 |
-| 🖥️ **SPA** | 侧边导航 | 作品集展示 |
 
 ## 预览
 
@@ -55,11 +54,6 @@
 | 浅色 | 深色 |
 |------|------|
 | ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
-
-### SPA（单页应用风）
-| 浅色 | 深色 |
-|------|------|
-| ![SPA Light](assets/previews/spa-light.png) | ![SPA Dark](assets/previews/spa-dark.png) |
 
 ## 快速开始
 
