@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">YN</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
+                <a href="#news">News</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="nav-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="nav-btn-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="nav-btn-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <span class="nav-btn-label theme-label">Light</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Your Name</h1>
+                <p class="hero-title">PhD Candidate at Your University</p>
+                <p class="hero-description">
+                    Exploring the frontiers of <span class="highlight">your research area</span>,
+                    <span class="highlight">machine learning</span>, and <span class="highlight">artificial intelligence</span>.
+                    Building intelligent systems that advance scientific discovery.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Citations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#publications" class="btn btn-primary">View Publications</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Publications
+            </h2>
+            <div class="publications-list">
+                <article class="pub-card" data-year="2025">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <div class="pub-header">
+                            <h3 class="pub-title">Your Paper Title Here</h3>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link">PDF</a>
+                                <a href="#" class="pub-link">Code</a>
+                            </div>
+                        </div>
+                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
+                        <p class="pub-venue">Conference/Journal Name 2025</p>
+                    </div>
+                </article>
+                <article class="pub-card" data-year="2024">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <div class="pub-header">
+                            <h3 class="pub-title">Another Paper Title</h3>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link">PDF</a>
+                            </div>
+                        </div>
+                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1</p>
+                        <p class="pub-venue">Conference/Journal Name 2024</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3 class="project-title">Project Name</h3>
+                    <p class="project-desc">Brief description of your project.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> News
+            </h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">2025.01</span>
+                    <div class="news-content">
+                        <span class="news-badge">New</span>
+                        <span class="news-text">Your news item here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Experience
+            </h2>
+            <div class="experience-grid">
+                <div class="exp-category">
+                    <h3>Education</h3>
+                    <div class="exp-item">
+                        <div class="exp-period">2020 - Present</div>
+                        <div class="exp-details">
+                            <h4>Ph.D. in Computer Science</h4>
+                            <p>Your University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-icon">//</span> Contact
+            </h2>
+            <div class="contact-content">
+                <p>Feel free to reach out!</p>
+                <p>Email: your.email@university.edu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Your Name. Academic Homepage Template.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
