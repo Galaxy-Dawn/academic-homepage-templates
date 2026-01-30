@@ -1,25 +1,38 @@
 # Academic Homepage Templates
 
+<p align="center">
+  <img src="https://img.shields.io/badge/themes-5-blue" alt="Themes">
+  <img src="https://img.shields.io/badge/dark%20mode-supported-green" alt="Dark Mode">
+  <img src="https://img.shields.io/badge/responsive-yes-orange" alt="Responsive">
+  <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="License">
+</p>
+
+<p align="center">
+  <b>English</b> | <a href="README_CN.md">中文</a>
+</p>
+
 A collection of beautiful, responsive academic homepage templates for researchers, professors, and PhD students.
 
 ## Features
 
-- 5 unique design themes
-- Dark/Light mode toggle
-- Fully responsive design
-- Clean, semantic HTML
-- Easy to customize
-- No build tools required
+| Feature | Description |
+|:-------:|-------------|
+| 🎨 | **5 Unique Themes** - Academic, Natural, Editorial, Glass, SPA |
+| 🌓 | **Dark/Light Mode** - Toggle with smooth transitions |
+| 📱 | **Responsive Design** - Works on all devices |
+| ⚡ | **No Build Tools** - Pure HTML, CSS, JavaScript |
+| 🎯 | **Easy to Customize** - CSS variables for quick styling |
+| 📝 | **Clean Code** - Semantic HTML structure |
 
 ## Themes
 
-| Theme | Description |
-|-------|-------------|
-| **Academic** | Clean, minimal design with focus on content |
-| **Natural** | Organic, warm aesthetic with soft colors |
-| **Editorial** | Magazine-style layout with elegant typography |
-| **Glass** | Modern glassmorphism with blur effects |
-| **SPA** | Single-page app style with sidebar navigation |
+| Theme | Style | Best For |
+|:-----:|-------|----------|
+| 📚 **Academic** | Clean, minimal | Content-focused researchers |
+| 🌿 **Natural** | Organic, warm | Creative academics |
+| 📰 **Editorial** | Magazine-style | Writers & journalists |
+| 💎 **Glass** | Glassmorphism | Modern tech researchers |
+| 🖥️ **SPA** | Sidebar navigation | Portfolio-style pages |
 
 ## Preview
 
