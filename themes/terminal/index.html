@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>yourname@academia ~ %</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+    <!-- Terminal Window Chrome -->
+    <div class="terminal-window">
+        <div class="terminal-titlebar">
+            <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-tabs">
+                <a href="#about" class="terminal-tab active" data-section="about">~/about</a>
+                <a href="#publications" class="terminal-tab" data-section="publications">~/papers</a>
+                <a href="#projects" class="terminal-tab" data-section="projects">~/projects</a>
+                <a href="#news" class="terminal-tab" data-section="news">~/news</a>
+                <a href="#experience" class="terminal-tab" data-section="experience">~/exp</a>
+                <a href="#contact" class="terminal-tab" data-section="contact">~/contact</a>
+            </div>
+            <button type="button" class="terminal-theme-btn" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-indicator"></span>
+            </button>
+        </div>
+
+        <main role="main" class="terminal-body">
+            <!-- Scanline overlay -->
+            <div class="scanline"></div>
+
+            <!-- About: whoami -->
+            <section id="about" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd" data-cmd="whoami --verbose">whoami --verbose</span>
+                </div>
+                <div class="command-output whoami-output">
+                    <div class="hero-photo">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <pre class="ascii-art">
+ __   __                  _  _
+ \ \ / /__  _   _ _ __   | \| | __ _ _ __ ___   ___
+  \ V / _ \| | | | '__|  | .` |/ _` | '_ ` _ \ / _ \
+   | | (_) | |_| | |     | |\  | (_| | | | | | |  __/
+   |_|\___/ \__,_|_|     |_| \_|\__,_|_| |_| |_|\___|
+                    </pre>
+                    <div class="info-block">
+                        <span class="info-key">ROLE</span>    <span class="info-val">PhD Candidate @ Your University</span>
+                        <span class="info-key">FOCUS</span>   <span class="info-val"><span class="hl">your research area</span>, <span class="hl">machine learning</span>, <span class="hl">AI</span></span>
+                        <span class="info-key">STATS</span>   <span class="info-val"><span class="stat-num">10+</span> papers · <span class="stat-num">100+</span> citations · <span class="stat-num">5+</span> projects</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications: ls -la -->
+            <section id="publications" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">ls -la --sort=date</span>
+                </div>
+                <div class="command-output">
+                    <div class="ls-header">
+                        <span class="ls-col ls-date">date</span>
+                        <span class="ls-col ls-name">filename</span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2025-01</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link">your_paper_title_here.pdf</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</span>
+                                <span class="file-venue">Conference/Journal Name 2025</span>
+                            </span>
+                            <span class="file-actions">
+                                <a href="#" class="action-link">[pdf]</a>
+                                <a href="#" class="action-link">[code]</a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="ls-row">
+                        <span class="ls-col ls-date">2024-06</span>
+                        <span class="ls-col ls-name">
+                            <a href="#" class="file-link">another_paper_title.pdf</a>
+                            <span class="file-meta">
+                                <span class="file-authors"><strong>Your Name</strong>, Co-Author 1</span>
+                                <span class="file-venue">Conference/Journal Name 2024</span>
+                            </span>
+                            <span class="file-actions">
+                                <a href="#" class="action-link">[pdf]</a>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects: tree -->
+            <section id="projects" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~/projects</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">tree --info</span>
+                </div>
+                <div class="command-output">
+                    <div class="tree-view">
+                        <div class="tree-item">
+                            <span class="tree-branch">├──</span>
+                            <span class="tree-folder">📁 project-name/</span>
+                            <span class="tree-desc">Brief description of your project.</span>
+                            <div class="tree-tags">
+                                <span class="tree-tag">Python</span>
+                                <span class="tree-tag">PyTorch</span>
+                            </div>
+                        </div>
+                        <div class="tree-item">
+                            <span class="tree-branch">└──</span>
+                            <span class="tree-folder">📁 another-project/</span>
+                            <span class="tree-desc">Another project description.</span>
+                            <div class="tree-tags">
+                                <span class="tree-tag">C++</span>
+                                <span class="tree-tag">CUDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News: tail -f -->
+            <section id="news" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">tail -f ~/news.log</span>
+                </div>
+                <div class="command-output">
+                    <div class="log-entry">
+                        <span class="log-level log-new">NEW</span>
+                        <span class="log-msg">Your news item here.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience: cat -->
+            <section id="experience" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/experience.yml</span>
+                </div>
+                <div class="command-output">
+                    <pre class="yaml-output"><span class="yaml-key">education:</span>
+  - <span class="yaml-key">degree:</span> <span class="yaml-val">Ph.D. in Computer Science</span>
+    <span class="yaml-key">institution:</span> <span class="yaml-val">Your University</span>
+    <span class="yaml-key">period:</span> <span class="yaml-val">2020 - Present</span>
+    <span class="yaml-key">status:</span> <span class="yaml-val yaml-active">active</span></pre>
+                </div>
+            </section>
+
+            <!-- Contact: echo -->
+            <section id="contact" class="terminal-section">
+                <div class="command-line">
+                    <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                    <span class="typed-cmd">cat ~/contact.json | jq .</span>
+                </div>
+                <div class="command-output">
+                    <pre class="json-output">{
+  <span class="json-key">"message"</span>: <span class="json-str">"Feel free to reach out!"</span>,
+  <span class="json-key">"email"</span>:   <span class="json-str">"your.email@university.edu"</span>,
+  <span class="json-key">"github"</span>:  <span class="json-str">"github.com/yourname"</span>
+}</pre>
+                </div>
+            </section>
+
+            <!-- Interactive prompt -->
+            <div class="terminal-prompt-line">
+                <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
+                <span class="cursor">█</span>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

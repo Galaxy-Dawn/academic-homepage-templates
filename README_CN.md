@@ -1,7 +1,7 @@
 # 学术主页模板
 
 <p align="center">
-  <img src="https://img.shields.io/badge/主题-4个-blue" alt="Themes">
+  <img src="https://img.shields.io/badge/主题-11个-blue" alt="Themes">
   <img src="https://img.shields.io/badge/深色模式-支持-green" alt="Dark Mode">
   <img src="https://img.shields.io/badge/响应式-是-orange" alt="Responsive">
   <img src="https://img.shields.io/badge/许可证-MIT-brightgreen" alt="License">
@@ -11,18 +11,18 @@
   <a href="README.md">English</a> | <b>中文</b>
 </p>
 
-为研究人员和博士生打造的精美响应式学术主页模板集合。
+为研究人员和博士生打造的精美响应式学术主页模板集合。**11 种独特主题**，支持即时切换、深色/浅色模式，无需任何构建工具。
 
 ## 特性
 
 | 特性 | 说明 |
 |:----:|------|
-| 🎨 | **4 种独特主题** - Academic, Natural, Editorial, Glass |
+| 🎨 | **11 种独特主题** - 从极简学术风到复古报纸风、赛博终端风 |
 | 🌓 | **深色/浅色模式** - 平滑过渡切换 |
 | 📱 | **响应式设计** - 适配所有设备 |
 | ⚡ | **无需构建工具** - 纯 HTML, CSS, JavaScript |
+| 🔀 | **即时主题切换** - 无需刷新页面即可切换主题 |
 | 🎯 | **易于定制** - CSS 变量快速调整样式 |
-| 📝 | **代码整洁** - 语义化 HTML 结构 |
 
 ## 主题
 
@@ -32,6 +32,13 @@
 | 🌿 **Natural** | 自然温暖 | 创意型学者 |
 | 📰 **Editorial** | 杂志风格 | 作家和记者 |
 | 💎 **Glass** | 玻璃拟态 | 科技领域研究者 |
+| 🇨🇭 **Swiss** | 国际主义排版 | 注重设计感的学者 |
+| 💻 **Terminal** | 赛博朋克终端 | CS 与工程背景研究者 |
+| 🍱 **Bento** | 模块化网格 | 信息量大的全能型学者 |
+| 🖋️ **Ink** | 东方水墨学者 | 人文与跨学科研究者 |
+| 🗞️ **Newspaper** | 复古大报版面 | 偏爱经典印刷美学的学者 |
+| 🔷 **Bauhaus** | 几何三原色 | 有艺术品味的跨学科学者 |
+| 📊 **Dashboard** | 数据可视化面板 | 数据驱动型研究者 |
 
 ## 预览
 
@@ -57,16 +64,36 @@
 
 ## 快速开始
 
-```bash
-# 1. 克隆仓库
-git clone https://github.com/Galaxy-Dawn/academic-homepage-templates.git
+1. 克隆仓库
+2. 在浏览器中打开 `index.html` 预览所有主题
+3. 选择喜欢的主题，复制 `themes/` 下对应文件夹
+4. 编辑 `index.html` 填入你的信息
+5. 部署到 GitHub Pages 或其他静态托管服务
 
-# 2. 选择主题
-cd academic-homepage-templates/themes/academic  # 或其他主题
+## 项目结构
 
-# 3. 编辑 index.html 填入你的信息
-
-# 4. 部署到 GitHub Pages 或其他静态托管服务
+```
+academic-homepage-templates/
+├── index.html          # 主题切换器（预览所有主题）
+├── script.js           # 主题切换逻辑
+├── README.md
+├── README_CN.md
+├── LICENSE
+└── themes/
+    ├── academic/
+    ├── natural/
+    ├── editorial/
+    ├── glass/
+    ├── swiss/
+    ├── terminal/
+    ├── bento/
+    ├── ink/
+    ├── newspaper/
+    ├── bauhaus/
+    └── dashboard/
+        ├── index.html
+        ├── style.css
+        └── script.js
 ```
 
 ## 定制指南
@@ -96,10 +123,9 @@ cd academic-homepage-templates/themes/academic  # 或其他主题
 
 ### GitHub Pages
 
-1. Fork 或克隆此仓库
-2. 上传你选择的主题文件
-3. 进入 Settings → Pages
-4. 选择 "main" 分支并保存
+1. 将选择的主题文件夹内容复制到仓库根目录
+2. 进入 Settings → Pages
+3. 选择 "main" 分支并保存
 
 ### 其他托管
 
@@ -108,7 +134,3 @@ cd academic-homepage-templates/themes/academic  # 或其他主题
 ## 许可证
 
 MIT 许可证 - 可自由用于个人或商业项目。
-
-## 致谢
-
-为学术社区用心打造。

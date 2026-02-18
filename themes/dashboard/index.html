@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>Your Name | Academic Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+    <!-- Left Icon Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <div class="sidebar-logo">YN</div>
+            <nav class="sidebar-nav">
+                <a href="#about" class="sidebar-icon active" data-section="about" title="Overview">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                </a>
+                <a href="#publications" class="sidebar-icon" data-section="publications" title="Publications">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </a>
+                <a href="#projects" class="sidebar-icon" data-section="projects" title="Projects">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                </a>
+                <a href="#news" class="sidebar-icon" data-section="news" title="News">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                </a>
+                <a href="#experience" class="sidebar-icon" data-section="experience" title="Experience">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </a>
+                <a href="#contact" class="sidebar-icon" data-section="contact" title="Contact">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </nav>
+        </div>
+        <div class="sidebar-bottom">
+            <button type="button" class="sidebar-icon" id="themeToggle" aria-label="Toggle theme" title="Toggle Theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Mobile Top Bar -->
+    <header class="mobile-bar" id="mobileBar">
+        <button type="button" class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <span class="mobile-logo">YN</span>
+        <button type="button" class="mobile-theme-btn" id="themeToggleMobile" aria-label="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+    </header>
+
+    <!-- Main Content Area -->
+    <main role="main" class="main-content" id="mainContent">
+
+        <!-- About / Metrics Overview Panel -->
+        <section id="about" class="panel-section">
+            <div class="panel-grid overview-grid">
+                <!-- Profile Card -->
+                <div class="panel profile-panel">
+                    <div class="panel-header"><span class="panel-dot green"></span> Profile</div>
+                    <div class="profile-body">
+                        <div class="profile-avatar">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </div>
+                        <h1 class="profile-name">Your Name</h1>
+                        <p class="profile-title">PhD Candidate at Your University</p>
+                        <p class="profile-bio">Exploring the frontiers of <span class="hl-cyan">your research area</span>, <span class="hl-orange">machine learning</span>, and <span class="hl-purple">artificial intelligence</span>.</p>
+                        <div class="profile-actions">
+                            <a href="#publications" class="btn btn-outline">Publications</a>
+                            <a href="#contact" class="btn btn-outline">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Metrics Cards -->
+                <div class="panel metric-panel metric-cyan">
+                    <div class="panel-header"><span class="panel-dot cyan"></span> Publications</div>
+                    <div class="metric-value">10+</div>
+                    <div class="metric-label">Total Papers</div>
+                    <div class="metric-bar"><div class="metric-fill" style="--fill:75%"></div></div>
+                </div>
+                <div class="panel metric-panel metric-orange">
+                    <div class="panel-header"><span class="panel-dot orange"></span> Citations</div>
+                    <div class="metric-value">100+</div>
+                    <div class="metric-label">Total Citations</div>
+                    <div class="metric-bar"><div class="metric-fill" style="--fill:60%"></div></div>
+                </div>
+                <div class="panel metric-panel metric-green">
+                    <div class="panel-header"><span class="panel-dot green"></span> H-Index</div>
+                    <div class="metric-value">5</div>
+                    <div class="metric-label">H-Index Score</div>
+                    <div class="metric-bar"><div class="metric-fill" style="--fill:50%"></div></div>
+                </div>
+                <div class="panel metric-panel metric-purple">
+                    <div class="panel-header"><span class="panel-dot purple"></span> Projects</div>
+                    <div class="metric-value">5+</div>
+                    <div class="metric-label">Active Projects</div>
+                    <div class="metric-bar"><div class="metric-fill" style="--fill:65%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications - Sortable Data Table -->
+        <section id="publications" class="panel-section">
+            <div class="panel full-panel">
+                <div class="panel-header">
+                    <span class="panel-dot cyan"></span> Publications
+                    <div class="table-controls">
+                        <button type="button" class="sort-btn active" data-sort="year">Year</button>
+                        <button type="button" class="sort-btn" data-sort="title">Title</button>
+                    </div>
+                </div>
+                <div class="pub-table">
+                    <div class="pub-table-head">
+                        <span class="pub-col-year">Year</span>
+                        <span class="pub-col-title">Title</span>
+                        <span class="pub-col-venue">Venue</span>
+                        <span class="pub-col-links">Links</span>
+                    </div>
+                    <div class="pub-table-body" id="pubTableBody">
+                        <div class="pub-row" data-year="2025" data-title="Your Paper Title Here">
+                            <span class="pub-col-year"><span class="year-badge">2025</span></span>
+                            <span class="pub-col-title">
+                                <strong>Your Paper Title Here</strong>
+                                <span class="pub-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</span>
+                            </span>
+                            <span class="pub-col-venue">NeurIPS 2025</span>
+                            <span class="pub-col-links">
+                                <a href="#" class="link-chip">PDF</a>
+                                <a href="#" class="link-chip">Code</a>
+                            </span>
+                        </div>
+                        <div class="pub-row" data-year="2024" data-title="Another Paper Title">
+                            <span class="pub-col-year"><span class="year-badge">2024</span></span>
+                            <span class="pub-col-title">
+                                <strong>Another Paper Title</strong>
+                                <span class="pub-authors"><strong>Your Name</strong>, Co-Author 1</span>
+                            </span>
+                            <span class="pub-col-venue">ICML 2024</span>
+                            <span class="pub-col-links">
+                                <a href="#" class="link-chip">PDF</a>
+                            </span>
+                        </div>
+                        <div class="pub-row" data-year="2024" data-title="A Third Paper">
+                            <span class="pub-col-year"><span class="year-badge">2024</span></span>
+                            <span class="pub-col-title">
+                                <strong>A Third Paper on Deep Learning</strong>
+                                <span class="pub-authors"><strong>Your Name</strong>, Co-Author 3</span>
+                            </span>
+                            <span class="pub-col-venue">ICLR 2024</span>
+                            <span class="pub-col-links">
+                                <a href="#" class="link-chip">PDF</a>
+                                <a href="#" class="link-chip">Code</a>
+                                <a href="#" class="link-chip">Demo</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects - Kanban Cards -->
+        <section id="projects" class="panel-section">
+            <div class="panel-grid kanban-grid">
+                <div class="panel kanban-card">
+                    <div class="panel-header"><span class="panel-dot green"></span> Active</div>
+                    <h3 class="kanban-title">Project Alpha</h3>
+                    <p class="kanban-desc">A novel framework for multi-modal learning with applications in scientific discovery.</p>
+                    <div class="kanban-tags">
+                        <span class="ktag">Python</span><span class="ktag">PyTorch</span><span class="ktag">Transformers</span>
+                    </div>
+                    <div class="kanban-footer">
+                        <span class="kanban-status status-active">In Progress</span>
+                        <a href="#" class="link-chip">GitHub</a>
+                    </div>
+                </div>
+                <div class="panel kanban-card">
+                    <div class="panel-header"><span class="panel-dot cyan"></span> Active</div>
+                    <h3 class="kanban-title">Project Beta</h3>
+                    <p class="kanban-desc">Efficient fine-tuning methods for large language models on domain-specific tasks.</p>
+                    <div class="kanban-tags">
+                        <span class="ktag">Python</span><span class="ktag">PEFT</span><span class="ktag">LoRA</span>
+                    </div>
+                    <div class="kanban-footer">
+                        <span class="kanban-status status-active">In Progress</span>
+                        <a href="#" class="link-chip">GitHub</a>
+                    </div>
+                </div>
+                <div class="panel kanban-card">
+                    <div class="panel-header"><span class="panel-dot orange"></span> Completed</div>
+                    <h3 class="kanban-title">Project Gamma</h3>
+                    <p class="kanban-desc">Benchmark suite for evaluating robustness of neural network architectures.</p>
+                    <div class="kanban-tags">
+                        <span class="ktag">Python</span><span class="ktag">JAX</span>
+                    </div>
+                    <div class="kanban-footer">
+                        <span class="kanban-status status-done">Completed</span>
+                        <a href="#" class="link-chip">Paper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News - Notification Feed -->
+        <section id="news" class="panel-section">
+            <div class="panel full-panel">
+                <div class="panel-header"><span class="panel-dot green"></span> News Feed</div>
+                <div class="feed-list">
+                    <div class="feed-item">
+                        <div class="feed-dot green"></div>
+                        <div class="feed-body">
+                            <span class="feed-time">2025.01</span>
+                            <span class="feed-badge badge-new">New</span>
+                            <span class="feed-text">Paper accepted at NeurIPS 2025!</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-dot cyan"></div>
+                        <div class="feed-body">
+                            <span class="feed-time">2024.12</span>
+                            <span class="feed-badge badge-talk">Talk</span>
+                            <span class="feed-text">Invited talk at ML Workshop on efficient training methods.</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-dot orange"></div>
+                        <div class="feed-body">
+                            <span class="feed-time">2024.09</span>
+                            <span class="feed-badge badge-award">Award</span>
+                            <span class="feed-text">Received Best Paper Award at ICML 2024.</span>
+                        </div>
+                    </div>
+                    <div class="feed-item">
+                        <div class="feed-dot purple"></div>
+                        <div class="feed-body">
+                            <span class="feed-time">2024.06</span>
+                            <span class="feed-badge badge-release">Release</span>
+                            <span class="feed-text">Open-sourced Project Beta on GitHub.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience - Timeline -->
+        <section id="experience" class="panel-section">
+            <div class="panel-grid timeline-grid">
+                <div class="panel timeline-panel">
+                    <div class="panel-header"><span class="panel-dot purple"></span> Education</div>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="tl-marker"></div>
+                            <div class="tl-content">
+                                <span class="tl-period">2020 - Present</span>
+                                <h4>Ph.D. in Computer Science</h4>
+                                <p>Your University</p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-marker"></div>
+                            <div class="tl-content">
+                                <span class="tl-period">2016 - 2020</span>
+                                <h4>B.S. in Computer Science</h4>
+                                <p>Your University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel timeline-panel">
+                    <div class="panel-header"><span class="panel-dot orange"></span> Work</div>
+                    <div class="timeline">
+                        <div class="tl-item">
+                            <div class="tl-marker"></div>
+                            <div class="tl-content">
+                                <span class="tl-period">Summer 2023</span>
+                                <h4>Research Intern</h4>
+                                <p>Tech Company</p>
+                            </div>
+                        </div>
+                        <div class="tl-item">
+                            <div class="tl-marker"></div>
+                            <div class="tl-content">
+                                <span class="tl-period">Summer 2022</span>
+                                <h4>Research Intern</h4>
+                                <p>Research Lab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact - Small Card -->
+        <section id="contact" class="panel-section">
+            <div class="panel-grid contact-grid">
+                <div class="panel contact-panel">
+                    <div class="panel-header"><span class="panel-dot cyan"></span> Contact</div>
+                    <div class="contact-body">
+                        <p>Feel free to reach out for collaborations or questions.</p>
+                        <div class="contact-row">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+                        </div>
+                        <div class="contact-row">
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Your University, City, Country</span>
+                        </div>
+                        <div class="contact-links">
+                            <a href="#" class="link-chip">Google Scholar</a>
+                            <a href="#" class="link-chip">GitHub</a>
+                            <a href="#" class="link-chip">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="dashboard-footer">
+            <p>&copy; 2025 Your Name. Academic Dashboard.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>The Academic Gazette</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#headline" class="skip-link">Skip to main content</a>
+    <div class="broadsheet">
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <!-- Section nav as newspaper sections -->
+            <nav class="section-nav">
+                <a href="#headline">Front Page</a>
+                <span class="nav-dot">·</span>
+                <a href="#publications">Publications</a>
+                <span class="nav-dot">·</span>
+                <a href="#projects">Projects</a>
+                <span class="nav-dot">·</span>
+                <a href="#news">Bulletin</a>
+                <span class="nav-dot">·</span>
+                <a href="#experience">Career</a>
+                <span class="nav-dot">·</span>
+                <a href="#contact">Letters</a>
+                <button type="button" id="themeToggle" class="edition-btn section-toggle" aria-label="Toggle theme">◐</button>
+            </nav>
+            <div class="masthead-rule"></div>
+            <h1 class="masthead-title">Your Name</h1>
+            <div class="masthead-rule"></div>
+        </header>
+
+        <section id="headline" class="paper-section">
+            <div class="front-columns">
+                <div class="col col-photo">
+                    <div class="hero-photo">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                    <div class="photo-info">
+                        <p class="photo-name">Your Name</p>
+                        <p class="photo-role">PhD Candidate</p>
+                        <p class="photo-place">Your University</p>
+                        <div class="photo-contact">
+                            <p>your.email@university.edu</p>
+                            <p>Google Scholar · GitHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-main">
+                    <p class="lead-para">Exploring the frontiers of <em>your research area</em>, <em>machine learning</em>, and <em>artificial intelligence</em>. Building intelligent systems that advance scientific discovery.</p>
+                    <p>Currently based at Your University, published extensively in top-tier venues and contributed to multiple open-source projects in the field.</p>
+                </div>
+                <div class="col col-side">
+                    <div class="sidebar-box">
+                        <h4 class="sidebar-title">HIGHLIGHTS</h4>
+                        <div class="sidebar-stat"><span class="stat-num">10+</span> Publications</div>
+                        <div class="sidebar-stat"><span class="stat-num">100+</span> Citations</div>
+                        <div class="sidebar-stat"><span class="stat-num">5+</span> Projects</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Publications as News Articles -->
+        <section id="publications" class="paper-section">
+            <h3 class="section-banner">PUBLICATIONS</h3>
+            <div class="articles-columns">
+                <article class="news-article">
+                    <h4 class="article-headline">Your Paper Title Here</h4>
+                    <p class="article-byline"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
+                    <p class="article-source">Conference/Journal Name 2025</p>
+                    <p class="article-body">A groundbreaking study presenting novel approaches to the problem domain. The work introduces new methodologies and demonstrates significant improvements over existing baselines.</p>
+                    <div class="article-links">
+                        <a href="#">[PDF]</a> <a href="#">[Code]</a>
+                    </div>
+                </article>
+                <article class="news-article">
+                    <h4 class="article-headline">Another Paper Title</h4>
+                    <p class="article-byline"><strong>Your Name</strong>, Co-Author 1</p>
+                    <p class="article-source">Conference/Journal Name 2024</p>
+                    <p class="article-body">This paper explores complementary aspects of the research program, extending prior work with additional experiments and theoretical analysis.</p>
+                    <div class="article-links">
+                        <a href="#">[PDF]</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Projects as Classified Ads -->
+        <section id="projects" class="paper-section">
+            <h3 class="section-banner">PROJECTS &amp; OPEN SOURCE</h3>
+            <div class="classifieds">
+                <div class="classified-ad">
+                    <h5 class="ad-title">★ Project Name</h5>
+                    <p class="ad-body">Brief description of your project. An innovative tool for advancing research in the field.</p>
+                    <p class="ad-tags">Python · PyTorch</p>
+                </div>
+                <div class="classified-ad">
+                    <h5 class="ad-title">★ Another Project</h5>
+                    <p class="ad-body">Another project description. Open-source contribution to the community.</p>
+                    <p class="ad-tags">C++ · CUDA</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- News as Bulletin Board -->
+        <section id="news" class="paper-section">
+            <h3 class="section-banner">BULLETIN BOARD</h3>
+            <div class="bulletin-columns">
+                <div class="bulletin-item">
+                    <span class="bulletin-date">Jan 15, 2025</span>
+                    <span class="bulletin-badge">BREAKING</span>
+                    <span class="bulletin-text">Your news item here — an important update about recent activities and achievements.</span>
+                </div>
+                <div class="bulletin-item">
+                    <span class="bulletin-date">Sep 1, 2024</span>
+                    <span class="bulletin-badge">UPDATE</span>
+                    <span class="bulletin-text">Another news item with details about ongoing research progress.</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Experience as Career Column -->
+        <section id="experience" class="paper-section">
+            <h3 class="section-banner">CAREER &amp; EDUCATION</h3>
+            <div class="career-columns">
+                <div class="career-block">
+                    <h5 class="career-cat">EDUCATION</h5>
+                    <div class="career-entry">
+                        <span class="career-period">2020–Present</span>
+                        <strong>Ph.D. in Computer Science</strong>
+                        <span class="career-place">Your University</span>
+                    </div>
+                    <div class="career-entry">
+                        <span class="career-period">2016–2020</span>
+                        <strong>B.S. in Computer Science</strong>
+                        <span class="career-place">Your University</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-rule"></div>
+
+        <!-- Contact as Letters to Editor -->
+        <section id="contact" class="paper-section">
+            <h3 class="section-banner">LETTERS TO THE EDITOR</h3>
+            <div class="letters-box">
+                <p class="letters-text">The editors welcome correspondence from readers. Direct all inquiries to:</p>
+                <p class="letters-email">your.email@university.edu</p>
+                <p class="letters-addr">Department of Computer Science · Your University</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="paper-footer">
+            <div class="footer-rule"></div>
+            <p>&copy; 2025 The Academic Gazette · All Rights Reserved · Your Name</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

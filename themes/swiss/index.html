@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>Your Name | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+    <!-- Left Vertical Navigation -->
+    <nav class="side-nav">
+        <div class="side-nav-top">
+            <span class="side-logo">YN</span>
+        </div>
+        <div class="side-nav-links">
+            <a href="#about" class="side-link active" data-num="00">About</a>
+            <a href="#publications" class="side-link" data-num="01">Papers</a>
+            <a href="#projects" class="side-link" data-num="02">Projects</a>
+            <a href="#news" class="side-link" data-num="03">News</a>
+            <a href="#experience" class="side-link" data-num="04">Exp</a>
+            <a href="#contact" class="side-link" data-num="05">Contact</a>
+        </div>
+        <button type="button" class="side-theme-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+    </nav>
+
+    <!-- Main Content (offset by sidebar) -->
+    <main role="main" class="main-content">
+
+        <!-- About -->
+        <section id="about" class="swiss-section">
+            <div class="hero-photo about-photo">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                </svg>
+            </div>
+            <div class="about-layout">
+                <h1 class="about-name">Your Name</h1>
+                <div class="about-meta">
+                    <p class="role-line">PhD Candidate</p>
+                    <span class="about-sep">—</span>
+                    <p class="uni-line">Your University</p>
+                </div>
+                <div class="red-rule"></div>
+                <div class="about-body">
+                    <p class="about-desc">
+                        Exploring the frontiers of <strong>your research area</strong>,
+                        <strong>machine learning</strong>, and <strong>artificial intelligence</strong>.
+                        Building intelligent systems that advance scientific discovery.
+                    </p>
+                    <div class="about-stats">
+                        <div class="swiss-stat"><span class="stat-big">10+</span><span class="stat-sm">Publications</span></div>
+                        <div class="swiss-stat"><span class="stat-big">100+</span><span class="stat-sm">Citations</span></div>
+                        <div class="swiss-stat"><span class="stat-big">5+</span><span class="stat-sm">Projects</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications" class="swiss-section">
+            <div class="section-num">01</div>
+            <h2 class="section-heading">Publications</h2>
+            <div class="pub-list">
+                <div class="pub-row">
+                    <span class="pub-year-col">2025</span>
+                    <div class="pub-info">
+                        <h3>Your Paper Title Here</h3>
+                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
+                        <p class="pub-venue">Conference/Journal Name 2025</p>
+                    </div>
+                    <div class="pub-actions">
+                        <a href="#">PDF</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+                <div class="pub-row">
+                    <span class="pub-year-col">2024</span>
+                    <div class="pub-info">
+                        <h3>Another Paper Title</h3>
+                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1</p>
+                        <p class="pub-venue">Conference/Journal Name 2024</p>
+                    </div>
+                    <div class="pub-actions">
+                        <a href="#">PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="swiss-section">
+            <div class="section-num">02</div>
+            <h2 class="section-heading">Projects</h2>
+            <div class="project-row">
+                <h3>Project Name</h3>
+                <p>Brief description of your project.</p>
+                <div class="tag-row">
+                    <span class="swiss-tag">Python</span>
+                    <span class="swiss-tag">PyTorch</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section id="news" class="swiss-section">
+            <div class="section-num">03</div>
+            <h2 class="section-heading">News</h2>
+            <div class="news-row">
+                <span class="news-date-col">2025.01</span>
+                <span class="news-badge-col">NEW</span>
+                <span>Your news item here</span>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="swiss-section">
+            <div class="section-num">04</div>
+            <h2 class="section-heading">Experience</h2>
+            <div class="exp-block">
+                <h4 class="exp-cat">Education</h4>
+                <div class="exp-row">
+                    <span class="exp-period-col">2020–Present</span>
+                    <div>
+                        <strong>Ph.D. in Computer Science</strong>
+                        <p>Your University</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="swiss-section">
+            <div class="section-num">05</div>
+            <h2 class="section-heading">Contact</h2>
+            <p>Feel free to reach out!</p>
+            <p class="contact-email">your.email@university.edu</p>
+        </section>
+
+        <footer class="swiss-footer">
+            <p>&copy; 2025 Your Name</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

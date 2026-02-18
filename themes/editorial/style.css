@@ -50,6 +50,12 @@
     --radius-lg: 4px;
     --radius-xl: 6px;
 }
+/* ---- Global Resets ---- */
+* { -webkit-tap-highlight-color: transparent; }
+[data-theme="dark"] { color-scheme: dark; }
+[data-theme="light"] { color-scheme: light; }
+::selection { background: var(--accent-primary); color: #fff; }
+
 
 /* Dark Theme - Evening Reading */
 [data-theme="dark"] {
@@ -1416,3 +1422,10 @@ a:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
+
+/* ---- Focus Styles ---- */
+:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 3px; border-radius: 2px; }
+
+/* ---- Skip Link ---- */
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent-primary); color: #fff; padding: 8px 16px; z-index: 9999; font-size: 0.875rem; transition: top 0.2s; }
+.skip-link:focus { top: 0; }

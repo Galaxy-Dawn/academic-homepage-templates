@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>Your Name | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+    <!-- Geometric Vertical Nav -->
+    <nav class="geo-nav" id="geoNav" aria-label="Main navigation">
+        <a href="#about" class="geo-nav-item active" data-section="about" aria-label="About">
+            <span class="shape shape-circle"></span>
+            <span class="geo-label">About</span>
+        </a>
+        <a href="#publications" class="geo-nav-item" data-section="publications" aria-label="Publications">
+            <span class="shape shape-triangle"></span>
+            <span class="geo-label">Pubs</span>
+        </a>
+        <a href="#projects" class="geo-nav-item" data-section="projects" aria-label="Projects">
+            <span class="shape shape-square"></span>
+            <span class="geo-label">Projects</span>
+        </a>
+        <a href="#news" class="geo-nav-item" data-section="news" aria-label="News">
+            <span class="shape shape-circle"></span>
+            <span class="geo-label">News</span>
+        </a>
+        <a href="#experience" class="geo-nav-item" data-section="experience" aria-label="Experience">
+            <span class="shape shape-triangle"></span>
+            <span class="geo-label">Exp</span>
+        </a>
+        <a href="#contact" class="geo-nav-item" data-section="contact" aria-label="Contact">
+            <span class="shape shape-square"></span>
+            <span class="geo-label">Contact</span>
+        </a>
+        <button type="button" class="geo-nav-item theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="shape shape-diamond"></span>
+            <span class="geo-label theme-label">Dark</span>
+        </button>
+    </nav>
+
+    <!-- Mobile Top Bar -->
+    <header class="mobile-bar">
+        <span class="mobile-logo">[YN]</span>
+        <button type="button" class="mobile-theme" id="mobileThemeToggle" aria-label="Toggle theme">
+            <span class="shape shape-diamond"></span>
+        </button>
+    </header>
+
+    <main role="main" class="bauhaus-main">
+        <!-- Hero: Geometric Composition -->
+        <section id="about" class="hero-composition">
+            <div class="hero-block-red"></div>
+            <div class="hero-block-blue"></div>
+            <div class="hero-block-yellow"></div>
+            <div class="hero-text-area">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Your<br>Name</h1>
+                <p class="hero-title">PhD Candidate at Your University</p>
+            </div>
+            <div class="hero-image-area">
+                <div class="image-frame">
+                    <div class="image-placeholder">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-desc-area">
+                <p class="hero-description">
+                    Exploring the frontiers of <strong>your research area</strong>,
+                    <strong>machine learning</strong>, and <strong>artificial intelligence</strong>.
+                    Building intelligent systems that advance scientific discovery.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat stat-red">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat stat-blue">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Citations</span>
+                    </div>
+                    <div class="stat stat-yellow">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#publications" class="btn btn-primary">View Publications</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications: Left-heavy asymmetric -->
+        <section id="publications" class="bh-section">
+            <div class="section-grid left-heavy">
+                <div class="section-header">
+                    <span class="shape shape-triangle inline-shape"></span>
+                    <h2>Publications</h2>
+                </div>
+                <div class="section-body">
+                    <article class="pub-card scroll-animate" data-year="2025">
+                        <div class="pub-accent"></div>
+                        <div class="pub-year">2025</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Your Paper Title Here</h3>
+                            <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
+                            <p class="pub-venue">Conference/Journal Name 2025</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link">PDF</a>
+                                <a href="#" class="pub-link">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="pub-card scroll-animate" data-year="2024">
+                        <div class="pub-accent accent-blue"></div>
+                        <div class="pub-year">2024</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Another Paper Title</h3>
+                            <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1</p>
+                            <p class="pub-venue">Conference/Journal Name 2024</p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-link">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects: Right-heavy asymmetric -->
+        <section id="projects" class="bh-section section-alt">
+            <div class="section-grid right-heavy">
+                <div class="section-header">
+                    <span class="shape shape-square inline-shape"></span>
+                    <h2>Projects</h2>
+                </div>
+                <div class="section-body">
+                    <article class="project-card scroll-animate">
+                        <div class="project-bar"></div>
+                        <h3 class="project-title">Project Name</h3>
+                        <p class="project-desc">Brief description of your project.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- News: Center-offset -->
+        <section id="news" class="bh-section">
+            <div class="section-grid center-offset">
+                <div class="section-header">
+                    <span class="shape shape-circle inline-shape"></span>
+                    <h2>News</h2>
+                </div>
+                <div class="section-body">
+                    <div class="news-item scroll-animate">
+                        <span class="news-date">2025.01</span>
+                        <div class="news-content">
+                            <span class="news-badge">New</span>
+                            <span class="news-text">Your news item here</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience: Left-heavy -->
+        <section id="experience" class="bh-section section-alt">
+            <div class="section-grid left-heavy">
+                <div class="section-header">
+                    <span class="shape shape-triangle inline-shape"></span>
+                    <h2>Experience</h2>
+                </div>
+                <div class="section-body">
+                    <div class="exp-category">
+                        <h3>Education</h3>
+                        <div class="exp-item scroll-animate">
+                            <div class="exp-period">2020 - Present</div>
+                            <div class="exp-details">
+                                <h4>Ph.D. in Computer Science</h4>
+                                <p>Your University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact: Right-heavy -->
+        <section id="contact" class="bh-section">
+            <div class="section-grid right-heavy">
+                <div class="section-header">
+                    <span class="shape shape-square inline-shape"></span>
+                    <h2>Contact</h2>
+                </div>
+                <div class="section-body">
+                    <div class="contact-box">
+                        <p>Feel free to reach out!</p>
+                        <p class="contact-email">your.email@university.edu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bauhaus-footer">
+        <div class="footer-stripe"></div>
+        <p>&copy; 2025 Your Name. Academic Homepage Template.</p>
+    </footer>
+
+    <button type="button" class="back-to-top" aria-label="Back to top">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic homepage of [Your Name] — PhD researcher in machine learning and artificial intelligence.">
+    <meta property="og:title" content="[Your Name] | Academic Homepage">
+    <meta property="og:description" content="PhD researcher in machine learning and artificial intelligence.">
+    <title>Your Name | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#about" class="skip-link">Skip to main content</a>
+
+    <!-- Vertical TOC -->
+    <nav class="vertical-toc" aria-label="Table of Contents">
+        <a href="#about" class="toc-link active" data-section="about">About</a>
+        <a href="#publications" class="toc-link" data-section="publications">Pub.</a>
+        <a href="#experience" class="toc-link" data-section="experience">Exp.</a>
+        <a href="#projects" class="toc-link" data-section="projects">Proj.</a>
+        <a href="#contact" class="toc-link" data-section="contact">Contact</a>
+    </nav>
+
+    <!-- Theme Toggle -->
+    <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-dot"></span>
+    </button>
+
+    <main role="main" class="scroll-content">
+
+        <!-- Hero -->
+        <header id="about" class="hero">
+            <div class="ink-wash" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <div class="hero-photo">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </div>
+                <h1 class="hero-name">Your Name</h1>
+                <p class="hero-role">PhD Candidate in Computer Science, Your University</p>
+                <div class="hero-bio">
+                    <p>Exploring the frontiers of <em>machine learning</em> and <em>artificial intelligence</em>. Building intelligent systems that advance scientific discovery.</p>
+                </div>
+                <div class="hero-links">
+                    <a href="#">Google Scholar</a>
+                    <span class="link-dot"></span>
+                    <a href="#">GitHub</a>
+                    <span class="link-dot"></span>
+                    <a href="#">CV</a>
+                </div>
+                <div class="hero-motif" aria-hidden="true">
+                    <svg aria-hidden="true" viewBox="0 0 240 65" width="360" height="98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <path id="petal-main" d="M0 0 C-1.5 -2, -2 -4, 0 -7 C2 -9, 3.5 -7, 3 -4 C2.8 -2, 1.5 0, 0 0Z"/>
+                            <path id="petal-side" d="M0 0 C-1 -1.8, -1.5 -3.5, 0 -6 C1.5 -7.5, 2.5 -5.5, 2 -3 C1.8 -1.2, 1 0, 0 0Z"/>
+                            <radialGradient id="petalGrad" cx="40%" cy="70%">
+                                <stop offset="0%" style="stop-color:var(--accent);stop-opacity:0.85"/>
+                                <stop offset="60%" style="stop-color:var(--accent);stop-opacity:0.75"/>
+                                <stop offset="100%" style="stop-color:var(--accent);stop-opacity:0.55"/>
+                            </radialGradient>
+                            <linearGradient id="branchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6b5a14;stop-opacity:0.4"/>
+                                <stop offset="50%" style="stop-color:#8b7324;stop-opacity:0.5"/>
+                                <stop offset="100%" style="stop-color:#5b4a10;stop-opacity:0.3"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M55 50 C70 45, 85 40, 100 35 C120 28, 145 24, 170 22 Q185 21, 195 22" stroke="url(#branchGrad)" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+                        <path d="M115 31 Q114 27, 112 24" stroke="url(#branchGrad)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                        <path d="M148 24 Q149 27, 148 29" stroke="url(#branchGrad)" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+                        <circle cx="100" cy="35" r="1.1" fill="#4a3a0a" opacity="0.25"/>
+                        <g transform="translate(70, 44)">
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(-72)"/>
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(216)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.9" transform="rotate(0)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(72)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(144)"/>
+                            <circle cx="0" cy="0" r="2.8" fill="#f0e6d2" opacity="0.92"/>
+                            <circle cx="0" cy="0" r="1.8" fill="#e8dcc8" opacity="0.7"/>
+                            <g stroke="#c9a84a" stroke-width="0.35" fill="none">
+                                <path d="M0 0 Q0.5 -2, 0.8 -4.5" opacity="0.8"/>
+                                <path d="M0 0 Q-0.3 -1.8, -0.5 -4" opacity="0.75"/>
+                                <path d="M0 0 Q1.2 -1.5, 1.8 -3.8" opacity="0.7"/>
+                                <path d="M0 0 Q-1 -1.2, -1.5 -3.2" opacity="0.7"/>
+                                <path d="M0 0 Q0 -1.5, 0 -3.5" opacity="0.65"/>
+                            </g>
+                            <g fill="#f0c860">
+                                <circle cx="0.8" cy="-4.5" r="0.65" opacity="0.85"/>
+                                <circle cx="-0.5" cy="-4" r="0.6" opacity="0.8"/>
+                                <circle cx="1.8" cy="-3.8" r="0.55" opacity="0.75"/>
+                                <circle cx="-1.5" cy="-3.2" r="0.5" opacity="0.75"/>
+                                <circle cx="0" cy="-3.5" r="0.5" opacity="0.7"/>
+                            </g>
+                        </g>
+                        <g transform="translate(112, 23) scale(0.9)">
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.65" transform="rotate(-60)"/>
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.65" transform="rotate(60)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.75" transform="rotate(0) scale(0.85)"/>
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.7" transform="rotate(120) scale(0.8)"/>
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.7" transform="rotate(-120) scale(0.8)"/>
+                            <circle cx="0" cy="0" r="2" fill="#f0e6d2" opacity="0.9"/>
+                            <circle cx="0" cy="-3" r="0.45" fill="#f0c860" opacity="0.75"/>
+                            <path d="M-2 3 Q0 4 2 3 L1.8 4.5 Q0 5 -1.8 4.5Z" fill="#3a5c13" opacity="0.5"/>
+                        </g>
+                        <g transform="translate(155, 26) scale(0.75)">
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(-72)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(0)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.8" transform="rotate(72)"/>
+                            <use href="#petal-main" fill="url(#petalGrad)" opacity="0.75" transform="rotate(144)"/>
+                            <use href="#petal-side" fill="url(#petalGrad)" opacity="0.7" transform="rotate(216)"/>
+                            <circle cx="0" cy="0" r="2.2" fill="#f0e6d2" opacity="0.9"/>
+                            <g fill="#f0c860">
+                                <circle cx="0.5" cy="-3.8" r="0.5" opacity="0.75"/>
+                                <circle cx="-0.4" cy="-3" r="0.45" opacity="0.7"/>
+                            </g>
+                        </g>
+                        <g transform="translate(148, 29) scale(0.45)">
+                            <ellipse cx="0" cy="-1" rx="3" ry="4" fill="var(--accent)" opacity="0.55"/>
+                            <path d="M-1.5 3 Q0 3.5 1.5 3 L1.2 4 Q0 4.2 -1.2 4Z" fill="#3a5c13" opacity="0.4"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <div class="ink-divider" aria-hidden="true"></div>
+
+        <!-- Publications -->
+        <section id="publications">
+            <div class="section-grid">
+                <div class="section-side">
+                    <h2 class="section-heading">Publications</h2>
+                    <span class="section-label-cn">论文发表</span>
+                </div>
+                <div class="section-main">
+                    <ol class="bib-list" reversed>
+                        <li class="bib-entry">
+                            <span class="bib-authors"><strong>Your Name</strong>, Co-Author One, Co-Author Two.</span>
+                            <span class="bib-title">"Your Paper Title Here: A Study of Something Important."</span>
+                            <span class="bib-venue"><em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2025.</span>
+                            <span class="bib-links">[<a href="#">PDF</a>] [<a href="#">Code</a>]</span>
+                        </li>
+                        <li class="bib-entry">
+                            <span class="bib-authors"><strong>Your Name</strong>, Co-Author One.</span>
+                            <span class="bib-title">"Another Paper Title on Machine Learning."</span>
+                            <span class="bib-venue"><em>International Conference on Machine Learning (ICML)</em>, 2024.</span>
+                            <span class="bib-links">[<a href="#">PDF</a>]</span>
+                        </li>
+                        <li class="bib-entry">
+                            <span class="bib-authors">Co-Author One, <strong>Your Name</strong>, Co-Author Two.</span>
+                            <span class="bib-title">"Earlier Work on Representation Learning."</span>
+                            <span class="bib-venue"><em>International Conference on Learning Representations (ICLR)</em>, 2023.</span>
+                            <span class="bib-links">[<a href="#">PDF</a>] [<a href="#">Code</a>]</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <div class="ink-divider" aria-hidden="true"></div>
+
+        <!-- Experience -->
+        <section id="experience">
+            <div class="section-grid">
+                <div class="section-side">
+                    <h2 class="section-heading">Experience</h2>
+                    <span class="section-label-cn">学术经历</span>
+                </div>
+                <div class="section-main">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-period">2021 &ndash; Present</span>
+                                <h3>Ph.D. in Computer Science</h3>
+                                <p>Your University</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-period">Summer 2023</span>
+                                <h3>Research Intern</h3>
+                                <p>Research Lab, Tech Company</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-period">2017 &ndash; 2021</span>
+                                <h3>B.S. in Computer Science</h3>
+                                <p>Your Undergraduate University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ink-divider" aria-hidden="true"></div>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="section-grid">
+                <div class="section-side">
+                    <h2 class="section-heading">Projects</h2>
+                    <span class="section-label-cn">研究项目</span>
+                </div>
+                <div class="section-main">
+                    <div class="project-entry">
+                        <h3>Project Name</h3>
+                        <p>Brief description of your research project and its impact.</p>
+                    </div>
+                    <div class="project-entry">
+                        <h3>Another Project</h3>
+                        <p>Brief description of another project you have worked on.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ink-divider" aria-hidden="true"></div>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="section-grid">
+                <div class="section-side">
+                    <h2 class="section-heading">Contact</h2>
+                    <span class="section-label-cn">联系方式</span>
+                </div>
+                <div class="section-main">
+                    <p class="contact-line">your.email@university.edu</p>
+                    <p class="contact-line">Office 123, Department of Computer Science</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="scroll-footer">
+            <p>&copy; 2025 Your Name</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

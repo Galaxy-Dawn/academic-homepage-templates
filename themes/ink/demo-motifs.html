@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink Scholar — 传统文化装饰方案对比</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f5f1e8;
+            --text: #1a1816;
+            --text-secondary: #4a4540;
+            --text-muted: #8a8478;
+            --accent: #c23b22;
+            --border: #d4cbb8;
+            --font-cn: 'Noto Serif SC', Georgia, serif;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body);
+            background: var(--bg);
+            color: var(--text);
+            padding: 3rem 2rem;
+        }
+        h1 {
+            font-family: var(--font-cn);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 4rem;
+            font-size: 1.05rem;
+        }
+        .demo-card {
+            max-width: 600px;
+            margin: 0 auto 5rem;
+            text-align: center;
+        }
+        .demo-label {
+            font-family: var(--font-cn);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+        .demo-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .demo-context {
+            margin-bottom: 1.5rem;
+        }
+        .demo-context .name {
+            font-family: var(--font-cn);
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+        }
+        .demo-context .role {
+            font-family: var(--font-display);
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .demo-context .links {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        .demo-context .links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 0.4rem;
+        }
+        .demo-context .links .dot {
+            display: inline-block;
+            width: 3px; height: 3px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            vertical-align: middle;
+        }
+        hr.sep {
+            border: none;
+            height: 1px;
+            background: var(--border);
+            margin: 0 auto 5rem;
+            max-width: 400px;
+        }
+</style>
+</head>
+<body>
+
+<h1>传统文化装饰方案对比</h1>
+<p class="subtitle">以下每种方案都展示在 Hero 区链接下方的位置</p>
+
+<!-- ====== 方案 1: 水墨山水剪影 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 1 · 水墨山水剪影</p>
+    <p class="demo-desc">CSS绘制远山轮廓，模拟水墨山水画意境</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-mountains">
+        <svg viewBox="0 0 400 60" width="320" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60 L60 28 L100 45 L150 15 L200 40 L240 22 L280 38 L340 10 L400 35 L400 60Z" fill="rgba(26,24,22,0.04)"/>
+            <path d="M0 60 L80 35 L130 48 L180 25 L230 42 L290 20 L350 38 L400 28 L400 60Z" fill="rgba(26,24,22,0.06)"/>
+            <path d="M0 60 L50 45 L120 38 L170 48 L220 35 L300 42 L360 32 L400 45 L400 60Z" fill="rgba(26,24,22,0.09)"/>
+        </svg>
+    </div>
+</div>
+
+<hr class="sep">
+
+<!-- ====== 方案 3: 祥云纹饰 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 3 · 如意祥云</p>
+    <p class="demo-desc">传统如意云纹螺旋曲线，多层叠加，朱红描边半透明填充</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-clouds">
+        <svg viewBox="0 0 240 50" width="240" height="50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#c23b22;stop-opacity:0.3"/>
+                    <stop offset="50%" style="stop-color:#c23b22;stop-opacity:0.5"/>
+                    <stop offset="100%" style="stop-color:#c23b22;stop-opacity:0.3"/>
+                </linearGradient>
+            </defs>
+            <!-- Left cloud: Ruyi pattern with spiral head -->
+            <g stroke="#c23b22" fill="url(#cloudGrad)">
+                <!-- Main outer spiral - clockwise curl at top -->
+                <path d="M20 32
+                         C20 18, 32 10, 44 12
+                         C54 14, 58 20, 58 26
+                         C58 30, 56 32, 54 32
+                         C52 32, 50 30, 50 28
+                         C50 24, 52 20, 48 18
+                         C44 16, 38 18, 36 22
+                         C34 26, 36 30, 40 32
+                         C42 33, 45 33, 48 31"
+                      stroke-width="1.5" fill="none" opacity="0.5"/>
+                <!-- Inner spiral detail -->
+                <path d="M44 14
+                         C48 15, 51 18, 52 22
+                         C53 26, 50 29, 46 29
+                         C43 29, 41 26, 42 23
+                         C43 20, 46 20, 47 22"
+                      stroke-width="0.8" fill="none" opacity="0.35"/>
+                <!-- Scattered tail lines -->
+                <path d="M20 32 C18 28, 16 24, 14 20" stroke-width="0.6" opacity="0.25"/>
+                <path d="M22 34 C20 32, 18 30, 15 28" stroke-width="0.5" opacity="0.2"/>
+                <!-- Small decorative dots -->
+                <circle cx="44" cy="13" r="1.2" fill="#c23b22" stroke="none" opacity="0.4"/>
+                <circle cx="54" cy="26" r="0.8" fill="#c23b22" stroke="none" opacity="0.3"/>
+            </g>
+
+            <!-- Center seal -->
+            <g transform="translate(120, 25)">
+                <rect x="-8" y="-8" width="16" height="16" rx="1" fill="#c23b22" opacity="0.6" transform="rotate(8)"/>
+                <rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#f5f1e8" stroke-width="0.8" opacity="0.8" transform="rotate(8)"/>
+            </g>
+
+            <!-- Right cloud: Mirrored Ruyi pattern -->
+            <g stroke="#c23b22" fill="url(#cloudGrad)" transform="translate(240, 0) scale(-1, 1)">
+                <!-- Main outer spiral -->
+                <path d="M20 32
+                         C20 18, 32 10, 44 12
+                         C54 14, 58 20, 58 26
+                         C58 30, 56 32, 54 32
+                         C52 32, 50 30, 50 28
+                         C50 24, 52 20, 48 18
+                         C44 16, 38 18, 36 22
+                         C34 26, 36 30, 40 32
+                         C42 33, 45 33, 48 31"
+                      stroke-width="1.5" fill="none" opacity="0.5"/>
+                <!-- Inner spiral detail -->
+                <path d="M44 14
+                         C48 15, 51 18, 52 22
+                         C53 26, 50 29, 46 29
+                         C43 29, 41 26, 42 23
+                         C43 20, 46 20, 47 22"
+                      stroke-width="0.8" fill="none" opacity="0.35"/>
+                <!-- Scattered tail lines -->
+                <path d="M20 32 C18 28, 16 24, 14 20" stroke-width="0.6" opacity="0.25"/>
+                <path d="M22 34 C20 32, 18 30, 15 28" stroke-width="0.5" opacity="0.2"/>
+                <!-- Small decorative dots -->
+                <circle cx="44" cy="13" r="1.2" fill="#c23b22" stroke="none" opacity="0.4"/>
+                <circle cx="54" cy="26" r="0.8" fill="#c23b22" stroke="none" opacity="0.3"/>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<hr class="sep">
+
+<!-- ====== 方案 5: 太极双鱼 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 5 · 太极双鱼</p>
+    <p class="demo-desc">纯CSS太极图，缓慢旋转，象征阴阳平衡</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-taiji-wrap">
+        <div class="motif-taiji"></div>
+    </div>
+</div>
+<style>
+    .motif-taiji-wrap {
+        display: flex; justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .motif-taiji {
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        background:
+            radial-gradient(circle at 50% 25%, #f5f1e8 4px, transparent 4px),
+            radial-gradient(circle at 50% 75%, #1a1816 4px, transparent 4px),
+            radial-gradient(circle at 50% 25%, #1a1816 11px, transparent 11px),
+            radial-gradient(circle at 50% 75%, #f5f1e8 11px, transparent 11px),
+            linear-gradient(to right, #1a1816 50%, #f5f1e8 50%);
+        border: 1.5px solid rgba(26,24,22,0.15);
+        animation: taiji-spin 30s linear infinite;
+        opacity: 0.5;
+    }
+    @keyframes taiji-spin {
+        to { transform: rotate(360deg); }
+    }
+</style>
+
+<hr class="sep">
+
+<!-- ====== 方案 6: 回纹装饰带 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 6 · 回纹装饰带</p>
+    <p class="demo-desc">传统回字纹水平装饰带，几何韵律</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-meander"></div>
+</div>
+<style>
+    .motif-meander {
+        margin: 1.5rem auto 0;
+        width: 240px;
+        height: 16px;
+        opacity: 0.25;
+        background:
+            linear-gradient(var(--text) 0 0) 0 0 / 8px 2px,
+            linear-gradient(var(--text) 0 0) 0 0 / 2px 8px,
+            linear-gradient(var(--text) 0 0) 6px 6px / 2px 8px,
+            linear-gradient(var(--text) 0 0) 0 14px / 8px 2px,
+            linear-gradient(var(--text) 0 0) 8px 6px / 8px 2px,
+            linear-gradient(var(--text) 0 0) 14px 0 / 2px 8px,
+            linear-gradient(var(--text) 0 0) 8px 8px / 8px 2px,
+            linear-gradient(var(--text) 0 0) 8px 8px / 2px 8px;
+        background-repeat: repeat-x;
+        background-size: 16px 16px;
+    }
+</style>
+
+<hr class="sep">
+
+<!-- ====== 方案 7: 梅花散点 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 7 · 寒梅傲雪</p>
+    <p class="demo-desc">精细贝塞尔曲线花瓣，深浅渐变层次，苍劲梅枝</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-plum">
+        <svg viewBox="0 0 240 65" width="240" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Realistic plum petal shape - not a perfect ellipse -->
+                <!-- Using path to create organic petal with slightly irregular edges -->
+                <path id="petal-main" d="M0 0
+                         C-1.5 -2, -2 -4, 0 -7
+                         C2 -9, 3.5 -7, 3 -4
+                         C2.8 -2, 1.5 0, 0 0Z"/>
+                <path id="petal-side" d="M0 0
+                         C-1 -1.8, -1.5 -3.5, 0 -6
+                         C1.5 -7.5, 2.5 -5.5, 2 -3
+                         C1.8 -1.2, 1 0, 0 0Z"/>
+
+                <!-- Petal gradient for depth -->
+                <radialGradient id="petalGrad" cx="40%" cy="70%">
+                    <stop offset="0%" style="stop-color:#d63828;stop-opacity:0.85"/>
+                    <stop offset="60%" style="stop-color:#c23b22;stop-opacity:0.75"/>
+                    <stop offset="100%" style="stop-color:#a02818;stop-opacity:0.65"/>
+                </radialGradient>
+
+                <!-- Branch texture -->
+                <linearGradient id="branchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#6b5a14;stop-opacity:0.4"/>
+                    <stop offset="50%" style="stop-color:#8b7324;stop-opacity:0.5"/>
+                    <stop offset="100%" style="stop-color:#5b4a10;stop-opacity:0.3"/>
+                </linearGradient>
+            </defs>
+
+            <!-- === Main trunk (shorter) === -->
+            <path d="M55 50
+                     C70 45, 85 40, 100 35
+                     C120 28, 145 24, 170 22
+                     Q185 21, 195 22"
+                  stroke="url(#branchGrad)" stroke-width="2.3" fill="none"
+                  stroke-linecap="round"/>
+
+            <!-- Sub-branch: upward spur -->
+            <path d="M115 31 Q114 27, 112 24"
+                  stroke="url(#branchGrad)" stroke-width="1.3" fill="none"
+                  stroke-linecap="round"/>
+
+            <!-- Sub-branch: short downward -->
+            <path d="M148 24 Q149 27, 148 29"
+                  stroke="url(#branchGrad)" stroke-width="1.1" fill="none"
+                  stroke-linecap="round"/>
+
+            <!-- Branch knots -->
+            <circle cx="100" cy="35" r="1.1" fill="#4a3a0a" opacity="0.25"/>
+            <circle cx="148" cy="24" r="0.9" fill="#4a3a0a" opacity="0.2"/>
+
+            <!-- === Flower 1: Large full bloom (main focus) === -->
+            <g transform="translate(70, 44)">
+                <!-- Petal layer 1: darker, bottom -->
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(-72)"/>
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(216)"/>
+
+                <!-- Petal layer 2: main petals -->
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.9" transform="rotate(0)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(72)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(144)"/>
+
+                <!-- Center highlight -->
+                <circle cx="0" cy="0" r="2.8" fill="#f0e6d2" opacity="0.92"/>
+                <circle cx="0" cy="0" r="1.8" fill="#e8dcc8" opacity="0.7"/>
+
+                <!-- Stamens: curved natural lines -->
+                <g stroke="#c9a84a" stroke-width="0.35" fill="none">
+                    <path d="M0 0 Q0.5 -2, 0.8 -4.5" opacity="0.8"/>
+                    <path d="M0 0 Q-0.3 -1.8, -0.5 -4" opacity="0.75"/>
+                    <path d="M0 0 Q1.2 -1.5, 1.8 -3.8" opacity="0.7"/>
+                    <path d="M0 0 Q-1 -1.2, -1.5 -3.2" opacity="0.7"/>
+                    <path d="M0 0 Q0 -1.5, 0 -3.5" opacity="0.65"/>
+                    <path d="M0 0 Q1.5 -0.8, 2.2 -2.5" opacity="0.6"/>
+                    <path d="M0 0 Q-1.3 -0.7, -1.8 -2.2" opacity="0.65"/>
+                </g>
+
+                <!-- Anthers: golden pollen dots at stamen tips -->
+                <g fill="#f0c860">
+                    <circle cx="0.8" cy="-4.5" r="0.65" opacity="0.85"/>
+                    <circle cx="-0.5" cy="-4" r="0.6" opacity="0.8"/>
+                    <circle cx="1.8" cy="-3.8" r="0.55" opacity="0.75"/>
+                    <circle cx="-1.5" cy="-3.2" r="0.5" opacity="0.75"/>
+                    <circle cx="0" cy="-3.5" r="0.5" opacity="0.7"/>
+                    <circle cx="2.2" cy="-2.5" r="0.45" opacity="0.7"/>
+                    <circle cx="-1.8" cy="-2.2" r="0.42" opacity="0.65"/>
+                </g>
+
+                <!-- Petal vein hints (subtle) -->
+                <g stroke="#a02818" stroke-width="0.25" opacity="0.15">
+                    <path d="M0 0 L0 -5" transform="rotate(0)"/>
+                    <path d="M0 0 L0 -4.5" transform="rotate(72)"/>
+                    <path d="M0 0 L0 -4.5" transform="rotate(144)"/>
+                </g>
+            </g>
+
+            <!-- === Flower 2: Partial bloom bud === -->
+            <g transform="translate(112, 23) scale(0.9)">
+                <!-- Outer petals slightly open -->
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.65" transform="rotate(-60)"/>
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.65" transform="rotate(60)"/>
+
+                <!-- Inner petals tighter -->
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.75" transform="rotate(0) scale(0.85)"/>
+                <use href="#petal-side" fill="#b02d18" opacity="0.7" transform="rotate(120) scale(0.8)"/>
+                <use href="#petal-side" fill="#b02d18" opacity="0.7" transform="rotate(-120) scale(0.8)"/>
+
+                <!-- Center -->
+                <circle cx="0" cy="0" r="2" fill="#f0e6d2" opacity="0.9"/>
+
+                <!-- Few stamens emerging -->
+                <g stroke="#c9a84a" stroke-width="0.3">
+                    <path d="M0 0 L0 -3" opacity="0.7"/>
+                    <path d="M0 0 L1 -2.5" opacity="0.65"/>
+                </g>
+                <circle cx="0" cy="-3" r="0.45" fill="#f0c860" opacity="0.75"/>
+                <circle cx="1" cy="-2.5" r="0.4" fill="#f0c860" opacity="0.7"/>
+
+                <!-- Calyx at base -->
+                <path d="M-2 3 Q0 4 2 3 L1.8 4.5 Q0 5 -1.8 4.5Z" fill="#3a5c13" opacity="0.5"/>
+            </g>
+
+            <!-- === Flower 3: Medium bloom === -->
+            <g transform="translate(155, 26) scale(0.75)">
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.75" transform="rotate(-72)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.85" transform="rotate(0)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.8" transform="rotate(72)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.75" transform="rotate(144)"/>
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.7" transform="rotate(216)"/>
+
+                <circle cx="0" cy="0" r="2.2" fill="#f0e6d2" opacity="0.9"/>
+
+                <g stroke="#c9a84a" stroke-width="0.3">
+                    <path d="M0 0 Q0.3 -2, 0.5 -3.8" opacity="0.7"/>
+                    <path d="M0 0 Q-0.2 -1.5, -0.4 -3" opacity="0.65"/>
+                    <path d="M0 0 Q1 -1.2, 1.4 -3" opacity="0.65"/>
+                    <path d="M0 0 Q-0.8 -1, -1.2 -2.5" opacity="0.6"/>
+                </g>
+                <g fill="#f0c860">
+                    <circle cx="0.5" cy="-3.8" r="0.5" opacity="0.75"/>
+                    <circle cx="-0.4" cy="-3" r="0.45" opacity="0.7"/>
+                    <circle cx="1.4" cy="-3" r="0.42" opacity="0.7"/>
+                    <circle cx="-1.2" cy="-2.5" r="0.38" opacity="0.65"/>
+                </g>
+            </g>
+
+            <!-- === Flower 4: Small distant bloom === -->
+            <g transform="translate(195, 20) scale(0.55)">
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.6" transform="rotate(-72)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.7" transform="rotate(0)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.65" transform="rotate(72)"/>
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.6" transform="rotate(144)"/>
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.55" transform="rotate(216)"/>
+                <circle cx="0" cy="0" r="1.8" fill="#f0e6d2" opacity="0.85"/>
+            </g>
+
+            <!-- === Tiny closed bud === -->
+            <g transform="translate(148, 29) scale(0.45)">
+                <ellipse cx="0" cy="-1" rx="3" ry="4" fill="#a02818" opacity="0.65"/>
+                <ellipse cx="0.8" cy="-0.5" rx="2" ry="3.5" fill="#b02d18" opacity="0.7"/>
+                <path d="M-1.5 3 Q0 3.5 1.5 3 L1.2 4 Q0 4.2 -1.2 4Z" fill="#3a5c13" opacity="0.4"/>
+            </g>
+
+            <!-- === Falling petal === -->
+            <g transform="translate(205, 30) rotate(35) scale(0.5)">
+                <use href="#petal-main" fill="url(#petalGrad)" opacity="0.45"/>
+            </g>
+
+            <!-- === Second falling petal === -->
+            <g transform="translate(88, 48) rotate(55) scale(0.35)">
+                <use href="#petal-side" fill="url(#petalGrad)" opacity="0.35"/>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<hr class="sep">
+
+<!-- ====== 方案 8: 书法笔触 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 8 · 书法横画</p>
+    <p class="demo-desc">模拟毛笔"一"字横画：藏锋起笔、行笔渐细、顿挫收笔，带飞白效果</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-brush">
+        <svg viewBox="0 0 200 35" width="200" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Feibai (dry brush) pattern -->
+                <pattern id="feibai" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+                    <rect width="4" height="4" fill="transparent"/>
+                    <circle cx="1" cy="1" r="0.5" fill="rgba(26,24,22,0.1)"/>
+                    <circle cx="3" cy="3" r="0.3" fill="rgba(26,24,22,0.08)"/>
+                </pattern>
+                <!-- Gradient for ink density -->
+                <linearGradient id="inkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#1a1816;stop-opacity:0.15"/>
+                    <stop offset="8%" style="stop-color:#1a1816;stop-opacity:0.4"/>
+                    <stop offset="35%" style="stop-color:#1a1816;stop-opacity:0.5"/>
+                    <stop offset="65%" style="stop-color:#1a1816;stop-opacity:0.35"/>
+                    <stop offset="88%" style="stop-color:#1a1816;stop-opacity:0.45"/>
+                    <stop offset="100%" style="stop-color:#1a1816;stop-opacity:0.2"/>
+                </linearGradient>
+            </defs>
+
+            <!-- Main brush stroke - simulating "一" horizontal -->
+            <!-- Shape: rounded start (cangfeng), slightly thinner middle, small lift at end (duncuo) -->
+            <path d="M15 20
+                     Q20 17, 30 18
+                     Q45 19, 70 17
+                     Q100 15, 130 18
+                     Q155 20, 175 19
+                     Q182 18.5, 185 19.5
+                     L185 18
+                     Q180 16.5, 170 17
+                     Q140 14, 110 16
+                     Q75 18, 45 20
+                     Q30 21, 20 20.5
+                     Q17 20.3, 15 20.5
+                     Z"
+                  fill="url(#inkGrad)"/>
+
+            <!-- Feibai texture overlay on middle section -->
+            <rect x="50" y="14" width="100" height="8" fill="url(#feibai)" opacity="0.6"/>
+
+            <!-- Ink splatter dots (natural brush marks) -->
+            <g fill="#1a1816" opacity="0.12">
+                <circle cx="45" cy="13" r="0.6"/>
+                <circle cx="52" cy="23" r="0.4"/>
+                <circle cx="78" cy="12" r="0.5"/>
+                <circle cx="95" cy="24" r="0.35"/>
+                <circle cx="120" cy="13" r="0.45"/>
+                <circle cx="135" cy="23" r="0.4"/>
+                <circle cx="158" cy="12" r="0.5"/>
+            </g>
+
+            <!-- Accent seal small -->
+            <g transform="translate(188, 20)">
+                <rect x="0" y="0" width="8" height="8" rx="0.5" fill="#c23b22" opacity="0.5" transform="rotate(6)"/>
+            </g>
+        </svg>
+    </div>
+</div>
+<style>
+    .motif-brush {
+        margin: 1.8rem auto 0;
+        display: flex;
+        justify-content: center;
+    }
+    .motif-brush svg {
+        max-width: 100%;
+    }
+</style>
+
+<hr class="sep">
+
+<!-- ====== 方案 10: 落款题记 ====== -->
+<div class="demo-card">
+    <p class="demo-label">方案 10 · 落款题记</p>
+    <p class="demo-desc">模拟中国画落款：竖排小字 + 朱红小印点</p>
+    <div class="demo-context">
+        <div class="name">Your Name</div>
+        <div class="role">PhD Candidate, Your University</div>
+        <div class="links"><a href="#">Google Scholar</a> <span class="dot"></span> <a href="#">GitHub</a> <span class="dot"></span> <a href="#">CV</a></div>
+    </div>
+    <div class="motif-colophon">
+        <span class="colophon-text">岁在乙巳年<br>书于春日</span>
+        <span class="colophon-dot"></span>
+    </div>
+</div>
+<style>
+    .motif-colophon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.8rem;
+        gap: 0.6rem;
+    }
+    .colophon-text {
+        font-family: var(--font-cn);
+        font-size: 0.78rem;
+        font-weight: 300;
+        color: var(--text-muted);
+        writing-mode: vertical-rl;
+        letter-spacing: 0.3em;
+        line-height: 1.8;
+        text-align: right;
+    }
+    .colophon-dot {
+        width: 10px;
+        height: 10px;
+        background: var(--accent);
+        opacity: 0.5;
+        transform: rotate(4deg);
+    }
+</style>
+
+</body>
+</html>

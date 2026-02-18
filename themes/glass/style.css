@@ -58,6 +58,12 @@
     --radius-xl: 28px;
     --radius-full: 9999px;
 }
+/* ---- Global Resets ---- */
+* { -webkit-tap-highlight-color: transparent; }
+[data-theme="dark"] { color-scheme: dark; }
+[data-theme="light"] { color-scheme: light; }
+::selection { background: var(--accent-primary); color: #fff; }
+
 
 /* Dark Theme - Deep Glass */
 [data-theme="dark"] {
@@ -747,6 +753,12 @@ a:hover {
 }
 
 .exp-category {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.exp-category h3 {
     font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 600;
@@ -754,9 +766,6 @@ a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-sm);
-    border-bottom: 2px solid var(--accent-primary);
 }
 
 .exp-item {
@@ -1457,3 +1466,10 @@ a:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg), 0 0 20px rgba(99, 102, 241, 0.4);
 }
+
+/* ---- Focus Styles ---- */
+:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 3px; border-radius: 2px; }
+
+/* ---- Skip Link ---- */
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent-primary); color: #fff; padding: 8px 16px; z-index: 9999; font-size: 0.875rem; transition: top 0.2s; }
+.skip-link:focus { top: 0; }

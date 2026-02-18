@@ -1,0 +1,594 @@
+/* ========================================
+   Ink Scholar · 新水墨画廊
+   Modern Ink Gallery — Eastern aesthetics
+   meets contemporary academic design
+   ======================================== */
+
+/* --- Light Theme: Rice Paper --- */
+:root {
+    --bg: #f5f1e8;
+    --bg-alt: #ede8db;
+    --bg-hero: #f5f1e8;
+    --text: #1a1816;
+    --text-secondary: #4a4540;
+    --text-muted: #8a8478;
+    --accent: #c23b22;
+    --accent-dim: rgba(194, 59, 34, 0.12);
+    --border: #d4cbb8;
+    --ink-wash: radial-gradient(ellipse at 50% 30%, rgba(26,24,22,0.04) 0%, transparent 70%);
+    --paper-texture: repeating-linear-gradient(
+        0deg, transparent, transparent 2px,
+        rgba(26,24,22,0.008) 2px, rgba(26,24,22,0.008) 4px
+    );
+    --font-cn: 'Noto Serif SC', 'Songti SC', Georgia, serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Helvetica Neue', sans-serif;
+    --transition: 0.4s ease;
+}
+/* ---- Global Resets ---- */
+* { -webkit-tap-highlight-color: transparent; }
+[data-theme="dark"] { color-scheme: dark; }
+[data-theme="light"] { color-scheme: light; }
+::selection { background: var(--accent); color: #fff; }
+
+
+/* --- Dark Theme: Aged Ink --- */
+[data-theme="dark"] {
+    --bg: #12110e;
+    --bg-alt: #1a1816;
+    --bg-hero: #12110e;
+    --text: #d4c5a9;
+    --text-secondary: #a89e8a;
+    --text-muted: #6a6258;
+    --accent: #c23b22;
+    --accent-dim: rgba(194, 59, 34, 0.15);
+    --border: #2e2a24;
+    --ink-wash: radial-gradient(ellipse at 50% 30%, rgba(212,197,169,0.03) 0%, transparent 70%);
+    --paper-texture: repeating-linear-gradient(
+        0deg, transparent, transparent 2px,
+        rgba(212,197,169,0.01) 2px, rgba(212,197,169,0.01) 4px
+    );
+}
+
+/* --- Reset --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    background-image: var(--paper-texture);
+    color: var(--text);
+    line-height: 1.8;
+    transition: background var(--transition), color var(--transition);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    position: relative;
+}
+a:hover { text-decoration: underline; }
+
+/* ========================================
+   Scroll Content (主容器)
+   ======================================== */
+.scroll-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ========================================
+   Vertical TOC (竖排目录)
+   ======================================== */
+.vertical-toc {
+    position: fixed;
+    right: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.toc-link {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color var(--transition);
+}
+
+.toc-link::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: var(--accent);
+    transition: height 0.3s ease;
+}
+
+.toc-link:hover,
+.toc-link.active {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.toc-link.active::before {
+    height: 100%;
+}
+
+/* ========================================
+   Theme Toggle (墨点)
+   ======================================== */
+.theme-toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+}
+
+.theme-toggle:hover { border-color: var(--accent); }
+
+.toggle-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--text);
+    transition: background var(--transition), transform 0.3s ease;
+}
+
+[data-theme="dark"] .toggle-dot {
+    transform: scale(0.5);
+}
+
+/* ========================================
+   Hero (首屏)
+   ======================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ink-wash {
+    position: absolute;
+    inset: 0;
+    background: var(--ink-wash);
+    pointer-events: none;
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-alt);
+    margin: 0 auto 1.5rem;
+    flex-shrink: 0;
+}
+
+.hero-photo svg {
+    width: 40px;
+    height: 40px;
+    color: var(--text-muted);
+    opacity: 0.4;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 古训横幅 Motto Banner */
+.motto-banner {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 2.5rem auto 0;
+    max-width: 360px;
+}
+
+.motto-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--text-muted), transparent);
+    opacity: 0.4;
+}
+
+.motto-text {
+    font-family: var(--font-cn);
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.hero-motif {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0.85;
+}
+
+.hero-name {
+    font-family: var(--font-cn);
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8rem;
+    line-height: 1.15;
+}
+
+.hero-role {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+.hero-bio {
+    max-width: 520px;
+    margin: 0 auto 2rem;
+}
+
+.hero-bio p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 2;
+}
+
+.hero-bio em {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Hero links */
+.hero-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+}
+
+.hero-links a {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.link-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--text-muted);
+}
+
+/* ========================================
+   Ink Brush Divider (水墨分隔线)
+   ======================================== */
+.ink-divider {
+    height: 1px;
+    margin: 5rem auto;
+    position: relative;
+    background: transparent;
+}
+
+.ink-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--border) 15%,
+        var(--text-muted) 40%,
+        var(--text) 50%,
+        var(--text-muted) 60%,
+        var(--border) 85%,
+        transparent 100%
+    );
+    opacity: 0.3;
+    border-radius: 1px;
+}
+
+.ink-divider::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.6;
+}
+
+/* ========================================
+   Section Grid Layout (左标签 + 右内容)
+   ======================================== */
+section {
+    padding: 1rem 0;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.section-side {
+    position: sticky;
+    top: 3rem;
+    padding-top: 0.3rem;
+}
+
+.section-heading {
+    font-family: var(--font-cn);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+}
+
+.section-label-cn {
+    display: block;
+    font-family: var(--font-cn);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.2em;
+}
+
+/* ========================================
+   Publications (论文发表)
+   ======================================== */
+.bib-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: bib-counter;
+}
+
+.bib-entry {
+    margin-bottom: 2rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    border-left: 3px solid var(--accent-dim);
+    background: var(--bg-alt);
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.bib-entry:hover {
+    border-left-color: var(--accent);
+}
+
+.bib-title {
+    color: var(--text);
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
+.bib-venue em {
+    font-family: var(--font-display);
+}
+
+.bib-links {
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+}
+
+.bib-links a {
+    font-weight: 500;
+}
+
+/* ========================================
+   Experience Timeline (墨点时间线)
+   ======================================== */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--accent), var(--border));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.2rem;
+}
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+    z-index: 1;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-cn);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+}
+
+.timeline-content p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+}
+
+.timeline-period {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* ========================================
+   Projects (研究项目)
+   ======================================== */
+.project-entry {
+    margin-bottom: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-entry:last-child { border-bottom: none; padding-bottom: 0; }
+
+.project-entry h3 {
+    font-family: var(--font-cn);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.project-entry p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* ========================================
+   Contact (联系方式)
+   ======================================== */
+.contact-line {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-display);
+    font-style: italic;
+}
+
+/* ========================================
+   Footer (页脚)
+   ======================================== */
+.scroll-footer {
+    margin-top: 5rem;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.scroll-footer p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    font-family: var(--font-body);
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+@media (max-width: 1100px) {
+    .vertical-toc { display: none; }
+}
+
+@media (max-width: 768px) {
+    .scroll-content { padding: 0 1.5rem; }
+    .section-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .section-side {
+        position: static;
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+    }
+    .section-label-cn { display: inline; }
+    .hero-name { font-size: 3rem; }
+    .hero { min-height: 85vh; }
+    .ink-divider { margin: 3rem auto; }
+    .theme-toggle { top: 1.2rem; right: 1.2rem; }
+}
+
+@media (max-width: 375px) {
+    .hero { padding: 3rem 1rem; min-height: 80vh; }
+    .hero-name { font-size: 2.5rem; }
+    .hero-role { font-size: 0.8rem; }
+    .section-grid { gap: 0.8rem; }
+    .bib-entry { font-size: 0.85rem; }
+    .timeline-content h3 { font-size: 0.95rem; }
+    .contact-line { font-size: 0.9rem; }
+}
+
+/* ========================================
+   Reduced Motion
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ---- Focus Styles ---- */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+/* ---- Skip Link ---- */
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: #fff; padding: 8px 16px; z-index: 9999; font-size: 0.875rem; transition: top 0.2s; }
+.skip-link:focus { top: 0; }
