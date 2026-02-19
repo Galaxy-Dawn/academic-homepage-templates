@@ -27,19 +27,19 @@ A collection of beautiful, responsive academic homepage templates for researcher
 
 ## Themes
 
-| Theme | Style | Best For |
-|:-----:|-------|----------|
-| 📚 **Academic** | Clean, minimal | Content-focused researchers |
-| 🌿 **Natural** | Organic, warm | Creative academics |
-| 📰 **Editorial** | Magazine-style | Writers & journalists |
-| 💎 **Glass** | Glassmorphism | Modern tech researchers |
-| 🇨🇭 **Swiss** | International typographic style | Design-conscious academics |
-| 💻 **Terminal** | Cyberpunk hacker aesthetic | CS & engineering researchers |
-| 🍱 **Bento** | Modular grid layout | Information-dense profiles |
-| 🖋️ **Ink** | East Asian ink scholar | Humanities & interdisciplinary |
-| 🗞️ **Newspaper** | Retro broadsheet layout | Classic print aesthetic |
-| 🔷 **Bauhaus** | Geometric primary colors | Art & design researchers |
-| 📊 **Dashboard** | Data visualization panel | Quantitative researchers |
+| Theme | Design Philosophy |
+|:-----:|-------------------|
+| 📚 **Academic** | Typography-first minimalism. Every element serves the content — generous whitespace, strict hierarchy, and zero decoration let your research speak for itself. |
+| 🌿 **Natural** | Biophilic warmth meets scholarly depth. Earthy tones, organic textures, and soft curves create a calm, human reading experience far from sterile lab aesthetics. |
+| 📰 **Editorial** | Magazine grid logic applied to academia. Asymmetric columns, pull quotes, and editorial spacing borrow from print journalism to make research feel like a feature story. |
+| 💎 **Glass** | Depth through translucency. Frosted-glass panels, layered blur, and luminous accents build a sense of dimension — modern without being cold. |
+| 🇨🇭 **Swiss** | International Typographic Style distilled. Rigid grid, flush-left text, and geometric precision echo the Helvetica era — timeless, authoritative, and unapologetically rational. |
+| 💻 **Terminal** | The command line as identity. Monospace type, scan-line overlays, and a file-system navigation metaphor turn your CV into an interactive shell session. |
+| 🍱 **Bento** | Japanese bento-box grid thinking. Each section is a self-contained tile — modular, balanced, and scannable at a glance without sacrificing density. |
+| 🖋️ **Ink** | East Asian ink-wash aesthetics meet Western academic structure. Brush-stroke accents, vertical rhythm, and restrained color evoke the scholar's study. |
+| 🗞️ **Newspaper** | Broadsheet nostalgia reimagined. Masthead typography, column rules, and datelines frame your work as front-page news — serious yet characterful. |
+| 🔷 **Bauhaus** | Primary geometry as language. Bold red, blue, and yellow blocks, Constructivist composition, and De Stijl proportions make every scroll a visual statement. |
+| 📊 **Dashboard** | Data-room clarity. Sidebar navigation, tabular publication lists, and a kanban project board apply product-design thinking to the academic profile. |
 
 ## Preview
 
