@@ -1,6 +1,6 @@
 // Theme Toggle
 const html = document.documentElement;
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', savedTheme);
 
 function toggleTheme() {

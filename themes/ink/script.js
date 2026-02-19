@@ -1,8 +1,8 @@
 // Theme toggle with localStorage
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
-const saved = localStorage.getItem('ink-theme');
-if (saved) html.setAttribute('data-theme', saved);
+const saved = localStorage.getItem('ink-theme') || 'light';
+html.setAttribute('data-theme', saved);
 
 toggle.addEventListener('click', () => {
     const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
