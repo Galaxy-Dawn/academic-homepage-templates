@@ -43,6 +43,8 @@
             top: 44px; left: 0; right: 0; bottom: 0;
             width: 100%; height: calc(100vh - 44px);
             border: none;
+            background: #fff;
+            transition: opacity 0.15s;
         }
     </style>
 </head>
@@ -71,6 +73,8 @@
 
         function activate(theme) {
             btns.forEach(b => b.classList.toggle('active', b.dataset.theme === theme));
+            iframe.style.opacity = '0';
+            iframe.onload = () => { iframe.style.opacity = '1'; };
             iframe.src = 'themes/' + theme + '/index.html';
             localStorage.setItem('active-theme', theme);
         }
