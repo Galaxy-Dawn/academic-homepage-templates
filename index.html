@@ -1,263 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Academic Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Nunito:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Crimson+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link id="themeStylesheet" rel="stylesheet" href="themes/academic/style.css">
+    <title>Academic Homepage Templates — 11 Themes</title>
     <style>
-        .style-switcher {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4px;
-            margin-right: 8px;
-            max-width: 420px;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #0a0a0a; font-family: system-ui, -apple-system, sans-serif; }
+
+        .bar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: 44px;
+            background: rgba(10,10,10,0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            display: flex; align-items: center; gap: 6px; padding: 0 14px;
         }
-        .style-btn {
+        .bar-label {
+            color: rgba(255,255,255,0.35);
+            font-size: 11px; font-weight: 500;
+            letter-spacing: 0.06em; text-transform: uppercase;
+            margin-right: 4px; white-space: nowrap;
+        }
+        .theme-btn {
             background: none;
-            border: 1px solid currentColor;
-            color: inherit;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 3px 6px;
-            border-radius: 4px;
-            cursor: pointer;
-            opacity: 0.5;
-            transition: opacity 0.2s, background 0.2s;
-            font-family: inherit;
-            line-height: 1;
-            letter-spacing: 0.02em;
+            border: 1px solid rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.55);
+            font-size: 11px; font-weight: 600;
+            padding: 3px 8px; border-radius: 4px;
+            cursor: pointer; letter-spacing: 0.03em;
+            transition: all 0.15s;
+            white-space: nowrap;
         }
-        .style-btn:hover {
-            opacity: 0.8;
+        .theme-btn:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+        .theme-btn.active {
+            background: #fff; color: #000;
+            border-color: #fff;
         }
-        .style-btn.active {
-            opacity: 1;
-            background: currentColor;
-        }
-        .style-btn.active span {
-            filter: invert(1);
-        }
-        html.style-transitioning,
-        html.style-transitioning * {
-            transition: none !important;
+
+        iframe {
+            position: fixed;
+            top: 44px; left: 0; right: 0; bottom: 0;
+            width: 100%; height: calc(100vh - 44px);
+            border: none;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-bracket">[</span>
-                <span class="logo-text">YN</span>
-                <span class="logo-bracket">]</span>
-            </a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
-                <a href="#news">News</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="nav-controls">
-                <div class="style-switcher">
-                    <button class="style-btn" data-style="academic" title="Academic"><span>Ac</span></button>
-                    <button class="style-btn" data-style="natural" title="Natural"><span>Na</span></button>
-                    <button class="style-btn" data-style="editorial" title="Editorial"><span>Ed</span></button>
-                    <button class="style-btn" data-style="glass" title="Glass"><span>Gl</span></button>
-                    <button class="style-btn" data-style="swiss" title="Swiss Poster"><span>Sw</span></button>
-                    <button class="style-btn" data-style="terminal" title="Cyber Terminal"><span>Te</span></button>
-                    <button class="style-btn" data-style="bento" title="Bento Box"><span>Be</span></button>
-                    <button class="style-btn" data-style="ink" title="Ink Scholar"><span>Ik</span></button>
-                    <button class="style-btn" data-style="newspaper" title="Newspaper"><span>Nw</span></button>
-                    <button class="style-btn" data-style="bauhaus" title="Bauhaus Lab"><span>Bh</span></button>
-                    <button class="style-btn" data-style="dashboard" title="Dashboard"><span>Db</span></button>
-                </div>
-                <button class="nav-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg class="nav-btn-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/>
-                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
-                    </svg>
-                    <svg class="nav-btn-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                    </svg>
-                    <span class="nav-btn-label theme-label">Light</span>
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div class="bar">
+        <span class="bar-label">Theme</span>
+        <button class="theme-btn active" data-theme="academic">Academic</button>
+        <button class="theme-btn" data-theme="natural">Natural</button>
+        <button class="theme-btn" data-theme="editorial">Editorial</button>
+        <button class="theme-btn" data-theme="glass">Glass</button>
+        <button class="theme-btn" data-theme="swiss">Swiss</button>
+        <button class="theme-btn" data-theme="terminal">Terminal</button>
+        <button class="theme-btn" data-theme="bento">Bento</button>
+        <button class="theme-btn" data-theme="ink">Ink</button>
+        <button class="theme-btn" data-theme="newspaper">Newspaper</button>
+        <button class="theme-btn" data-theme="bauhaus">Bauhaus</button>
+        <button class="theme-btn" data-theme="dashboard">Dashboard</button>
+    </div>
 
-    <!-- Hero / About Section -->
-    <section id="about" class="hero">
-        <div class="hero-bg">
-            <div class="grid-overlay"></div>
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Your Name</h1>
-                <p class="hero-title">PhD Candidate at Your University</p>
-                <p class="hero-description">
-                    Exploring the frontiers of <span class="highlight">your research area</span>,
-                    <span class="highlight">machine learning</span>, and <span class="highlight">artificial intelligence</span>.
-                    Building intelligent systems that advance scientific discovery.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Publications</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Citations</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Projects</span>
-                    </div>
-                </div>
-                <div class="hero-cta">
-                    <a href="#publications" class="btn btn-primary">View Publications</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-frame">
-                    <div class="image-placeholder">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <iframe id="preview" src="themes/academic/index.html" title="Theme Preview"></iframe>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="section-container">
-            <h2 class="section-title">
-                <span class="title-icon">//</span> Publications
-            </h2>
-            <div class="publications-list">
-                <article class="pub-card" data-year="2025">
-                    <div class="pub-year">2025</div>
-                    <div class="pub-content">
-                        <div class="pub-header">
-                            <h3 class="pub-title">Your Paper Title Here</h3>
-                            <div class="pub-links">
-                                <a href="#" class="pub-link">PDF</a>
-                                <a href="#" class="pub-link">Code</a>
-                            </div>
-                        </div>
-                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
-                        <p class="pub-venue">Conference/Journal Name 2025</p>
-                    </div>
-                </article>
-                <article class="pub-card" data-year="2024">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-content">
-                        <div class="pub-header">
-                            <h3 class="pub-title">Another Paper Title</h3>
-                            <div class="pub-links">
-                                <a href="#" class="pub-link">PDF</a>
-                            </div>
-                        </div>
-                        <p class="pub-authors"><strong>Your Name</strong>, Co-Author 1</p>
-                        <p class="pub-venue">Conference/Journal Name 2024</p>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+    <script>
+        const iframe = document.getElementById('preview');
+        const btns = document.querySelectorAll('.theme-btn');
+        const saved = localStorage.getItem('active-theme') || 'academic';
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-        <div class="section-container">
-            <h2 class="section-title">
-                <span class="title-icon">//</span> Projects
-            </h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3 class="project-title">Project Name</h3>
-                    <p class="project-desc">Brief description of your project.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PyTorch</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+        function activate(theme) {
+            btns.forEach(b => b.classList.toggle('active', b.dataset.theme === theme));
+            iframe.src = 'themes/' + theme + '/index.html';
+            localStorage.setItem('active-theme', theme);
+        }
 
-    <!-- News Section -->
-    <section id="news" class="section">
-        <div class="section-container">
-            <h2 class="section-title">
-                <span class="title-icon">//</span> News
-            </h2>
-            <div class="news-list">
-                <div class="news-item">
-                    <span class="news-date">2025.01</span>
-                    <div class="news-content">
-                        <span class="news-badge">New</span>
-                        <span class="news-text">Your news item here</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section section-alt">
-        <div class="section-container">
-            <h2 class="section-title">
-                <span class="title-icon">//</span> Experience
-            </h2>
-            <div class="experience-grid">
-                <div class="exp-category">
-                    <h3>Education</h3>
-                    <div class="exp-item">
-                        <div class="exp-period">2020 - Present</div>
-                        <div class="exp-details">
-                            <h4>Ph.D. in Computer Science</h4>
-                            <p>Your University</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="section-container">
-            <h2 class="section-title">
-                <span class="title-icon">//</span> Contact
-            </h2>
-            <div class="contact-content">
-                <p>Feel free to reach out!</p>
-                <p>Email: your.email@university.edu</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Your Name. Academic Homepage Template.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+        btns.forEach(btn => btn.addEventListener('click', () => activate(btn.dataset.theme)));
+        activate(saved);
+    </script>
 </body>
 </html>
