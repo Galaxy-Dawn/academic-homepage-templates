@@ -22,6 +22,7 @@ A collection of beautiful, responsive academic homepage templates for researcher
 | 📱 | **Responsive Design** - Works on all devices |
 | ⚡ | **No Build Tools** - Pure HTML, CSS, JavaScript |
 | 🔀 | **Instant Theme Switching** - Switch themes without page reload |
+| 📝 | **One-File Config** - Edit only `config.js` to fill in all your info |
 | 🎯 | **Easy to Customize** - CSS variables for quick styling |
 
 ## Themes
@@ -67,7 +68,7 @@ A collection of beautiful, responsive academic homepage templates for researcher
 1. Clone the repository
 2. Open `index.html` in your browser to preview all themes
 3. Choose a theme and copy the folder from `themes/`
-4. Edit `index.html` with your information
+4. Edit **`config.js`** with your information (name, publications, projects, etc.)
 5. Deploy to GitHub Pages or any static hosting
 
 ## Project Structure
@@ -92,19 +93,45 @@ academic-homepage-templates/
     └── dashboard/
         ├── index.html
         ├── style.css
-        └── script.js
+        ├── script.js
+        └── config.js   # ← Edit this file only
 ```
 
 ## Customization
 
 ### Personal Information
 
-Edit `index.html` and replace the placeholder text:
+Edit **`config.js`** in your chosen theme folder — no HTML editing required:
 
-- `Your Name` → Your actual name
-- `Your University` → Your institution
-- `your.email@university.edu` → Your email
-- Update publications, projects, and experience sections
+```js
+const USER_CONFIG = {
+  name: "Jane Smith",
+  role: "PhD Candidate",
+  university: "MIT",
+  email: "jane@mit.edu",
+  bio: "Your research bio here.",
+  photo: "assets/photo.jpg",   // optional
+
+  publications: [
+    { year: 2025, title: "Paper Title", authors: "Jane Smith, Co-Author",
+      venue: "NeurIPS 2025", links: { pdf: "#", code: "#" } },
+  ],
+
+  projects: [
+    { name: "Project", desc: "Description.", tags: ["Python", "PyTorch"] },
+  ],
+
+  news: [
+    { date: "2025.01", badge: "New", text: "Paper accepted at NeurIPS 2025!" },
+  ],
+
+  education: [
+    { period: "2020–Present", degree: "Ph.D. in CS", institution: "MIT" },
+  ],
+};
+```
+
+If `config.js` is removed, the page falls back to the original placeholder HTML.
 
 ### Colors
 
