@@ -59,7 +59,7 @@
    |_|\___/ \__,_|_|     |_| \_|\__,_|_| |_| |_|\___|
                     </pre>
                     <div class="info-block">
-                        <span class="info-key">ROLE</span>    <span class="info-val">PhD Candidate @ Your University</span>
+                        <span class="info-key">ROLE</span>    <span class="info-val" id="cfg-role">PhD Candidate @ Your University</span>
                         <span class="info-key">FOCUS</span>   <span class="info-val"><span class="hl">your research area</span>, <span class="hl">machine learning</span>, <span class="hl">AI</span></span>
                         <span class="info-key">STATS</span>   <span class="info-val"><span class="stat-num">10+</span> papers · <span class="stat-num">100+</span> citations · <span class="stat-num">5+</span> projects</span>
                     </div>
@@ -72,7 +72,7 @@
                     <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~/papers</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">ls -la --sort=date</span>
                 </div>
-                <div class="command-output">
+                <div class="command-output" id="cfg-publications">
                     <div class="ls-header">
                         <span class="ls-col ls-date">date</span>
                         <span class="ls-col ls-name">filename</span>
@@ -114,7 +114,7 @@
                     <span class="typed-cmd">tree --info</span>
                 </div>
                 <div class="command-output">
-                    <div class="tree-view">
+                    <div class="tree-view" id="cfg-projects">
                         <div class="tree-item">
                             <span class="tree-branch">├──</span>
                             <span class="tree-folder">📁 project-name/</span>
@@ -143,7 +143,7 @@
                     <span class="prompt">visitor@academia</span><span class="prompt-sep">:</span><span class="prompt-dir">~</span><span class="prompt-char">$</span>
                     <span class="typed-cmd">tail -f ~/news.log</span>
                 </div>
-                <div class="command-output">
+                <div class="command-output" id="cfg-news">
                     <div class="log-entry">
                         <span class="log-level log-new">NEW</span>
                         <span class="log-msg">Your news item here.</span>
@@ -158,7 +158,7 @@
                     <span class="typed-cmd">cat ~/experience.yml</span>
                 </div>
                 <div class="command-output">
-                    <pre class="yaml-output"><span class="yaml-key">education:</span>
+                    <pre class="yaml-output" id="cfg-experience"><span class="yaml-key">education:</span>
   - <span class="yaml-key">degree:</span> <span class="yaml-val">Ph.D. in Computer Science</span>
     <span class="yaml-key">institution:</span> <span class="yaml-val">Your University</span>
     <span class="yaml-key">period:</span> <span class="yaml-val">2020 - Present</span>
@@ -189,6 +189,7 @@
         </main>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

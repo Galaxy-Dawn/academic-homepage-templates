@@ -62,8 +62,8 @@
             <div class="hero-block-yellow"></div>
             <div class="hero-text-area">
                 <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Your<br>Name</h1>
-                <p class="hero-title">PhD Candidate at Your University</p>
+                <h1 class="hero-name" data-config="name">Your<br>Name</h1>
+                <p class="hero-title" data-config="role_university">PhD Candidate at Your University</p>
             </div>
             <div class="hero-image-area">
                 <div class="image-frame">
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="hero-desc-area">
-                <p class="hero-description">
+                <p class="hero-description" data-config="bio">
                     Exploring the frontiers of <strong>your research area</strong>,
                     <strong>machine learning</strong>, and <strong>artificial intelligence</strong>.
                     Building intelligent systems that advance scientific discovery.
@@ -109,7 +109,7 @@
                     <span class="shape shape-triangle inline-shape"></span>
                     <h2>Publications</h2>
                 </div>
-                <div class="section-body">
+                <div class="section-body" id="cfg-publications">
                     <article class="pub-card scroll-animate" data-year="2025">
                         <div class="pub-accent"></div>
                         <div class="pub-year">2025</div>
@@ -146,7 +146,7 @@
                     <span class="shape shape-square inline-shape"></span>
                     <h2>Projects</h2>
                 </div>
-                <div class="section-body">
+                <div class="section-body" id="cfg-projects">
                     <article class="project-card scroll-animate">
                         <div class="project-bar"></div>
                         <h3 class="project-title">Project Name</h3>
@@ -167,7 +167,7 @@
                     <span class="shape shape-circle inline-shape"></span>
                     <h2>News</h2>
                 </div>
-                <div class="section-body">
+                <div class="section-body" id="cfg-news">
                     <div class="news-item scroll-animate">
                         <span class="news-date">2025.01</span>
                         <div class="news-content">
@@ -186,7 +186,7 @@
                     <span class="shape shape-triangle inline-shape"></span>
                     <h2>Experience</h2>
                 </div>
-                <div class="section-body">
+                <div class="section-body" id="cfg-experience">
                     <div class="exp-category">
                         <h3>Education</h3>
                         <div class="exp-item scroll-animate">
@@ -229,6 +229,7 @@
         </svg>
     </button>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

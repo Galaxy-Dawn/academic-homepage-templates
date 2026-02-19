@@ -17,7 +17,7 @@
     <!-- Left Vertical Navigation -->
     <nav class="side-nav">
         <div class="side-nav-top">
-            <span class="side-logo">YN</span>
+            <span class="side-logo" data-config="initials">YN</span>
         </div>
         <div class="side-nav-links">
             <a href="#about" class="side-link active" data-num="00">About</a>
@@ -41,15 +41,15 @@
                 </svg>
             </div>
             <div class="about-layout">
-                <h1 class="about-name">Your Name</h1>
+                <h1 class="about-name" data-config="name">Your Name</h1>
                 <div class="about-meta">
-                    <p class="role-line">PhD Candidate</p>
+                    <p class="role-line" data-config="role">PhD Candidate</p>
                     <span class="about-sep">—</span>
-                    <p class="uni-line">Your University</p>
+                    <p class="uni-line" data-config="university">Your University</p>
                 </div>
                 <div class="red-rule"></div>
                 <div class="about-body">
-                    <p class="about-desc">
+                    <p class="about-desc" data-config="bio">
                         Exploring the frontiers of <strong>your research area</strong>,
                         <strong>machine learning</strong>, and <strong>artificial intelligence</strong>.
                         Building intelligent systems that advance scientific discovery.
@@ -67,7 +67,7 @@
         <section id="publications" class="swiss-section">
             <div class="section-num">01</div>
             <h2 class="section-heading">Publications</h2>
-            <div class="pub-list">
+            <div class="pub-list" id="cfg-publications">
                 <div class="pub-row">
                     <span class="pub-year-col">2025</span>
                     <div class="pub-info">
@@ -98,6 +98,7 @@
         <section id="projects" class="swiss-section">
             <div class="section-num">02</div>
             <h2 class="section-heading">Projects</h2>
+            <div id="cfg-projects">
             <div class="project-row">
                 <h3>Project Name</h3>
                 <p>Brief description of your project.</p>
@@ -106,16 +107,19 @@
                     <span class="swiss-tag">PyTorch</span>
                 </div>
             </div>
+            </div>
         </section>
 
         <!-- News -->
         <section id="news" class="swiss-section">
             <div class="section-num">03</div>
             <h2 class="section-heading">News</h2>
+            <div id="cfg-news">
             <div class="news-row">
                 <span class="news-date-col">2025.01</span>
                 <span class="news-badge-col">NEW</span>
                 <span>Your news item here</span>
+            </div>
             </div>
         </section>
 
@@ -123,6 +127,7 @@
         <section id="experience" class="swiss-section">
             <div class="section-num">04</div>
             <h2 class="section-heading">Experience</h2>
+            <div id="cfg-experience">
             <div class="exp-block">
                 <h4 class="exp-cat">Education</h4>
                 <div class="exp-row">
@@ -132,6 +137,7 @@
                         <p>Your University</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -148,6 +154,7 @@
         </footer>
     </main>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

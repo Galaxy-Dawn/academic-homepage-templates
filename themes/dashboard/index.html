@@ -17,7 +17,7 @@
     <!-- Left Icon Sidebar -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-top">
-            <div class="sidebar-logo">YN</div>
+            <div class="sidebar-logo" data-config="initials">YN</div>
             <nav class="sidebar-nav">
                 <a href="#about" class="sidebar-icon active" data-section="about" title="Overview">
                     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
@@ -52,7 +52,7 @@
         <button type="button" class="mobile-menu-btn" id="menuToggle" aria-label="Toggle menu">
             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
-        <span class="mobile-logo">YN</span>
+        <span class="mobile-logo" data-config="initials">YN</span>
         <button type="button" class="mobile-theme-btn" id="themeToggleMobile" aria-label="Toggle theme">
             <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
             <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -72,9 +72,9 @@
                         <div class="profile-avatar">
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                         </div>
-                        <h1 class="profile-name">Your Name</h1>
-                        <p class="profile-title">PhD Candidate at Your University</p>
-                        <p class="profile-bio">Exploring the frontiers of <span class="hl-cyan">your research area</span>, <span class="hl-orange">machine learning</span>, and <span class="hl-purple">artificial intelligence</span>.</p>
+                        <h1 class="profile-name" data-config="name">Your Name</h1>
+                        <p class="profile-title" data-config="role_university">PhD Candidate at Your University</p>
+                        <p class="profile-bio" data-config="bio">Exploring the frontiers of <span class="hl-cyan">your research area</span>, <span class="hl-orange">machine learning</span>, and <span class="hl-purple">artificial intelligence</span>.</p>
                         <div class="profile-actions">
                             <a href="#publications" class="btn btn-outline">Publications</a>
                             <a href="#contact" class="btn btn-outline">Contact</a>
@@ -126,7 +126,7 @@
                         <span class="pub-col-venue">Venue</span>
                         <span class="pub-col-links">Links</span>
                     </div>
-                    <div class="pub-table-body" id="pubTableBody">
+                    <div class="pub-table-body" id="cfg-publications">
                         <div class="pub-row" data-year="2025" data-title="Your Paper Title Here">
                             <span class="pub-col-year"><span class="year-badge">2025</span></span>
                             <span class="pub-col-title">
@@ -170,7 +170,7 @@
 
         <!-- Projects - Kanban Cards -->
         <section id="projects" class="panel-section">
-            <div class="panel-grid kanban-grid">
+            <div class="panel-grid kanban-grid" id="cfg-projects">
                 <div class="panel kanban-card">
                     <div class="panel-header"><span class="panel-dot green"></span> Active</div>
                     <h3 class="kanban-title">Project Alpha</h3>
@@ -214,7 +214,7 @@
         <section id="news" class="panel-section">
             <div class="panel full-panel">
                 <div class="panel-header"><span class="panel-dot green"></span> News Feed</div>
-                <div class="feed-list">
+                <div class="feed-list" id="cfg-news">
                     <div class="feed-item">
                         <div class="feed-dot green"></div>
                         <div class="feed-body">
@@ -253,7 +253,7 @@
 
         <!-- Experience - Timeline -->
         <section id="experience" class="panel-section">
-            <div class="panel-grid timeline-grid">
+            <div class="panel-grid timeline-grid" id="cfg-experience">
                 <div class="panel timeline-panel">
                     <div class="panel-header"><span class="panel-dot purple"></span> Education</div>
                     <div class="timeline">
@@ -329,6 +329,7 @@
         </footer>
     </main>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

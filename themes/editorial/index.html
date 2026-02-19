@@ -19,7 +19,7 @@
         <div class="nav-container">
             <a href="#" class="nav-logo">
                 <span class="logo-bracket">[</span>
-                <span class="logo-text">YN</span>
+                <span class="logo-text" data-config="initials">YN</span>
                 <span class="logo-bracket">]</span>
             </a>
             <div class="nav-links">
@@ -55,9 +55,9 @@
         <div class="hero-content">
             <div class="hero-text">
                 <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Your Name</h1>
-                <p class="hero-title">PhD Candidate at Your University</p>
-                <p class="hero-description">
+                <h1 class="hero-name" data-config="name">Your Name</h1>
+                <p class="hero-title" data-config="role_university">PhD Candidate at Your University</p>
+                <p class="hero-description" data-config="bio">
                     Exploring the frontiers of <span class="highlight">your research area</span>,
                     <span class="highlight">machine learning</span>, and <span class="highlight">artificial intelligence</span>.
                     Building intelligent systems that advance scientific discovery.
@@ -100,7 +100,7 @@
             <h2 class="section-title">
                 <span class="title-icon">//</span> Publications
             </h2>
-            <div class="publications-list">
+            <div class="publications-list" id="cfg-publications">
                 <article class="pub-card" data-year="2025">
                     <div class="pub-year">2025</div>
                     <div class="pub-content">
@@ -138,7 +138,7 @@
             <h2 class="section-title">
                 <span class="title-icon">//</span> Projects
             </h2>
-            <div class="projects-grid">
+            <div class="projects-grid" id="cfg-projects">
                 <article class="project-card">
                     <h3 class="project-title">Project Name</h3>
                     <p class="project-desc">Brief description of your project.</p>
@@ -157,7 +157,7 @@
             <h2 class="section-title">
                 <span class="title-icon">//</span> News
             </h2>
-            <div class="news-list">
+            <div class="news-list" id="cfg-news">
                 <div class="news-item">
                     <span class="news-date">2025.01</span>
                     <div class="news-content">
@@ -175,7 +175,7 @@
             <h2 class="section-title">
                 <span class="title-icon">//</span> Experience
             </h2>
-            <div class="experience-grid">
+            <div class="experience-grid" id="cfg-experience">
                 <div class="exp-category">
                     <h3>Education</h3>
                     <div class="exp-item">
@@ -210,6 +210,7 @@
         </div>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

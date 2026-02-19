@@ -34,7 +34,7 @@
                 <button type="button" id="themeToggle" class="edition-btn section-toggle" aria-label="Toggle theme">◐</button>
             </nav>
             <div class="masthead-rule"></div>
-            <h1 class="masthead-title">Your Name</h1>
+            <h1 class="masthead-title" data-config="name">Your Name</h1>
             <div class="masthead-rule"></div>
         </header>
 
@@ -47,9 +47,9 @@
                         </svg>
                     </div>
                     <div class="photo-info">
-                        <p class="photo-name">Your Name</p>
-                        <p class="photo-role">PhD Candidate</p>
-                        <p class="photo-place">Your University</p>
+                        <p class="photo-name" data-config="name">Your Name</p>
+                        <p class="photo-role" data-config="role">PhD Candidate</p>
+                        <p class="photo-place" data-config="university">Your University</p>
                         <div class="photo-contact">
                             <p>your.email@university.edu</p>
                             <p>Google Scholar · GitHub</p>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="col col-main">
-                    <p class="lead-para">Exploring the frontiers of <em>your research area</em>, <em>machine learning</em>, and <em>artificial intelligence</em>. Building intelligent systems that advance scientific discovery.</p>
+                    <p class="lead-para" data-config="bio">Exploring the frontiers of <em>your research area</em>, <em>machine learning</em>, and <em>artificial intelligence</em>. Building intelligent systems that advance scientific discovery.</p>
                     <p>Currently based at Your University, published extensively in top-tier venues and contributed to multiple open-source projects in the field.</p>
                 </div>
                 <div class="col col-side">
@@ -76,7 +76,7 @@
         <!-- Publications as News Articles -->
         <section id="publications" class="paper-section">
             <h3 class="section-banner">PUBLICATIONS</h3>
-            <div class="articles-columns">
+            <div class="articles-columns" id="cfg-publications">
                 <article class="news-article">
                     <h4 class="article-headline">Your Paper Title Here</h4>
                     <p class="article-byline"><strong>Your Name</strong>, Co-Author 1, Co-Author 2</p>
@@ -103,7 +103,7 @@
         <!-- Projects as Classified Ads -->
         <section id="projects" class="paper-section">
             <h3 class="section-banner">PROJECTS &amp; OPEN SOURCE</h3>
-            <div class="classifieds">
+            <div class="classifieds" id="cfg-projects">
                 <div class="classified-ad">
                     <h5 class="ad-title">★ Project Name</h5>
                     <p class="ad-body">Brief description of your project. An innovative tool for advancing research in the field.</p>
@@ -122,7 +122,7 @@
         <!-- News as Bulletin Board -->
         <section id="news" class="paper-section">
             <h3 class="section-banner">BULLETIN BOARD</h3>
-            <div class="bulletin-columns">
+            <div class="bulletin-columns" id="cfg-news">
                 <div class="bulletin-item">
                     <span class="bulletin-date">Jan 15, 2025</span>
                     <span class="bulletin-badge">BREAKING</span>
@@ -141,7 +141,7 @@
         <!-- Experience as Career Column -->
         <section id="experience" class="paper-section">
             <h3 class="section-banner">CAREER &amp; EDUCATION</h3>
-            <div class="career-columns">
+            <div class="career-columns" id="cfg-experience">
                 <div class="career-block">
                     <h5 class="career-cat">EDUCATION</h5>
                     <div class="career-entry">
@@ -178,6 +178,7 @@
 
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

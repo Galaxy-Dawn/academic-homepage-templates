@@ -40,8 +40,8 @@
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
                     </svg>
                 </div>
-                <h1 class="hero-name">Your Name</h1>
-                <p class="hero-role">PhD Candidate in Computer Science, Your University</p>
+                <h1 class="hero-name" data-config="name">Your Name</h1>
+                <p class="hero-role" data-config="role_university">PhD Candidate in Computer Science, Your University</p>
                 <div class="hero-bio">
                     <p>Exploring the frontiers of <em>machine learning</em> and <em>artificial intelligence</em>. Building intelligent systems that advance scientific discovery.</p>
                 </div>
@@ -136,7 +136,7 @@
                     <span class="section-label-cn">论文发表</span>
                 </div>
                 <div class="section-main">
-                    <ol class="bib-list" reversed>
+                    <ol class="bib-list" id="cfg-publications" reversed>
                         <li class="bib-entry">
                             <span class="bib-authors"><strong>Your Name</strong>, Co-Author One, Co-Author Two.</span>
                             <span class="bib-title">"Your Paper Title Here: A Study of Something Important."</span>
@@ -169,7 +169,7 @@
                     <h2 class="section-heading">Experience</h2>
                     <span class="section-label-cn">学术经历</span>
                 </div>
-                <div class="section-main">
+                <div class="section-main" id="cfg-experience">
                     <div class="timeline">
                         <div class="timeline-item">
                             <div class="timeline-dot"></div>
@@ -209,7 +209,7 @@
                     <h2 class="section-heading">Projects</h2>
                     <span class="section-label-cn">研究项目</span>
                 </div>
-                <div class="section-main">
+                <div class="section-main" id="cfg-projects">
                     <div class="project-entry">
                         <h3>Project Name</h3>
                         <p>Brief description of your research project and its impact.</p>
@@ -244,6 +244,7 @@
 
     </main>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
