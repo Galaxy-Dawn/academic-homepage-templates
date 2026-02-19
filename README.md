@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/dark%20mode-supported-green" alt="Dark Mode">
   <img src="https://img.shields.io/badge/responsive-yes-orange" alt="Responsive">
   <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="License">
+  <a href="https://galaxy-dawn.github.io/academic-homepage-templates"><img src="https://img.shields.io/badge/live%20demo-GitHub%20Pages-blue" alt="Live Demo"></a>
 </p>
 
 <p align="center">
@@ -12,6 +13,8 @@
 </p>
 
 A collection of beautiful, responsive academic homepage templates for researchers and PhD students. **11 unique themes** with instant switching, dark/light mode, and zero build tools required.
+
+> **Live Demo**: [galaxy-dawn.github.io/academic-homepage-templates](https://galaxy-dawn.github.io/academic-homepage-templates)
 
 ## Features
 
@@ -46,57 +49,57 @@ A collection of beautiful, responsive academic homepage templates for researcher
 ### Academic
 | Light | Dark |
 |-------|------|
-| ![Academic Light](assets/previews/academic-light.png) | ![Academic Dark](assets/previews/academic-dark.png) |
+| <img src="assets/previews/academic-light.png" width="600" alt="Academic Light"> | <img src="assets/previews/academic-dark.png" width="600" alt="Academic Dark"> |
 
 ### Natural
 | Light | Dark |
 |-------|------|
-| ![Natural Light](assets/previews/natural-light.png) | ![Natural Dark](assets/previews/natural-dark.png) |
+| <img src="assets/previews/natural-light.png" width="600" alt="Natural Light"> | <img src="assets/previews/natural-dark.png" width="600" alt="Natural Dark"> |
 
 ### Editorial
 | Light | Dark |
 |-------|------|
-| ![Editorial Light](assets/previews/editorial-light.png) | ![Editorial Dark](assets/previews/editorial-dark.png) |
+| <img src="assets/previews/editorial-light.png" width="600" alt="Editorial Light"> | <img src="assets/previews/editorial-dark.png" width="600" alt="Editorial Dark"> |
 
 ### Glass
 | Light | Dark |
 |-------|------|
-| ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
+| <img src="assets/previews/glass-light.png" width="600" alt="Glass Light"> | <img src="assets/previews/glass-dark.png" width="600" alt="Glass Dark"> |
 
 ### Swiss
 | Light | Dark |
 |-------|------|
-| ![Swiss Light](assets/previews/swiss-light.png) | ![Swiss Dark](assets/previews/swiss-dark.png) |
+| <img src="assets/previews/swiss-light.png" width="600" alt="Swiss Light"> | <img src="assets/previews/swiss-dark.png" width="600" alt="Swiss Dark"> |
 
 ### Terminal
 | Light | Dark |
 |-------|------|
-| ![Terminal Light](assets/previews/terminal-light.png) | ![Terminal Dark](assets/previews/terminal-dark.png) |
+| <img src="assets/previews/terminal-light.png" width="600" alt="Terminal Light"> | <img src="assets/previews/terminal-dark.png" width="600" alt="Terminal Dark"> |
 
 ### Bento
 | Light | Dark |
 |-------|------|
-| ![Bento Light](assets/previews/bento-light.png) | ![Bento Dark](assets/previews/bento-dark.png) |
+| <img src="assets/previews/bento-light.png" width="600" alt="Bento Light"> | <img src="assets/previews/bento-dark.png" width="600" alt="Bento Dark"> |
 
 ### Ink
 | Light | Dark |
 |-------|------|
-| ![Ink Light](assets/previews/ink-light.png) | ![Ink Dark](assets/previews/ink-dark.png) |
+| <img src="assets/previews/ink-light.png" width="600" alt="Ink Light"> | <img src="assets/previews/ink-dark.png" width="600" alt="Ink Dark"> |
 
 ### Newspaper
 | Light | Dark |
 |-------|------|
-| ![Newspaper Light](assets/previews/newspaper-light.png) | ![Newspaper Dark](assets/previews/newspaper-dark.png) |
+| <img src="assets/previews/newspaper-light.png" width="600" alt="Newspaper Light"> | <img src="assets/previews/newspaper-dark.png" width="600" alt="Newspaper Dark"> |
 
 ### Bauhaus
 | Light | Dark |
 |-------|------|
-| ![Bauhaus Light](assets/previews/bauhaus-light.png) | ![Bauhaus Dark](assets/previews/bauhaus-dark.png) |
+| <img src="assets/previews/bauhaus-light.png" width="600" alt="Bauhaus Light"> | <img src="assets/previews/bauhaus-dark.png" width="600" alt="Bauhaus Dark"> |
 
 ### Dashboard
 | Light | Dark |
 |-------|------|
-| ![Dashboard Light](assets/previews/dashboard-light.png) | ![Dashboard Dark](assets/previews/dashboard-dark.png) |
+| <img src="assets/previews/dashboard-light.png" width="600" alt="Dashboard Light"> | <img src="assets/previews/dashboard-dark.png" width="600" alt="Dashboard Dark"> |
 
 ## Quick Start
 

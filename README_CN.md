@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/深色模式-支持-green" alt="Dark Mode">
   <img src="https://img.shields.io/badge/响应式-是-orange" alt="Responsive">
   <img src="https://img.shields.io/badge/许可证-MIT-brightgreen" alt="License">
+  <a href="https://galaxy-dawn.github.io/academic-homepage-templates"><img src="https://img.shields.io/badge/在线演示-GitHub%20Pages-blue" alt="Live Demo"></a>
 </p>
 
 <p align="center">
@@ -12,6 +13,8 @@
 </p>
 
 为研究人员和博士生打造的精美响应式学术主页模板集合。**11 种独特主题**，支持即时切换、深色/浅色模式，无需任何构建工具。
+
+> **在线演示**: [galaxy-dawn.github.io/academic-homepage-templates](https://galaxy-dawn.github.io/academic-homepage-templates)
 
 ## 特性
 
@@ -46,22 +49,57 @@
 ### Academic（学术风）
 | 浅色 | 深色 |
 |------|------|
-| ![Academic Light](assets/previews/academic-light.png) | ![Academic Dark](assets/previews/academic-dark.png) |
+| <img src="assets/previews/academic-light.png" width="600" alt="Academic Light"> | <img src="assets/previews/academic-dark.png" width="600" alt="Academic Dark"> |
 
 ### Natural（自然风）
 | 浅色 | 深色 |
 |------|------|
-| ![Natural Light](assets/previews/natural-light.png) | ![Natural Dark](assets/previews/natural-dark.png) |
+| <img src="assets/previews/natural-light.png" width="600" alt="Natural Light"> | <img src="assets/previews/natural-dark.png" width="600" alt="Natural Dark"> |
 
 ### Editorial（编辑风）
 | 浅色 | 深色 |
 |------|------|
-| ![Editorial Light](assets/previews/editorial-light.png) | ![Editorial Dark](assets/previews/editorial-dark.png) |
+| <img src="assets/previews/editorial-light.png" width="600" alt="Editorial Light"> | <img src="assets/previews/editorial-dark.png" width="600" alt="Editorial Dark"> |
 
 ### Glass（玻璃风）
 | 浅色 | 深色 |
 |------|------|
-| ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
+| <img src="assets/previews/glass-light.png" width="600" alt="Glass Light"> | <img src="assets/previews/glass-dark.png" width="600" alt="Glass Dark"> |
+
+### Swiss（瑞士风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/swiss-light.png" width="600" alt="Swiss Light"> | <img src="assets/previews/swiss-dark.png" width="600" alt="Swiss Dark"> |
+
+### Terminal（终端风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/terminal-light.png" width="600" alt="Terminal Light"> | <img src="assets/previews/terminal-dark.png" width="600" alt="Terminal Dark"> |
+
+### Bento（便当风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/bento-light.png" width="600" alt="Bento Light"> | <img src="assets/previews/bento-dark.png" width="600" alt="Bento Dark"> |
+
+### Ink（水墨风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/ink-light.png" width="600" alt="Ink Light"> | <img src="assets/previews/ink-dark.png" width="600" alt="Ink Dark"> |
+
+### Newspaper（报纸风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/newspaper-light.png" width="600" alt="Newspaper Light"> | <img src="assets/previews/newspaper-dark.png" width="600" alt="Newspaper Dark"> |
+
+### Bauhaus（包豪斯风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/bauhaus-light.png" width="600" alt="Bauhaus Light"> | <img src="assets/previews/bauhaus-dark.png" width="600" alt="Bauhaus Dark"> |
+
+### Dashboard（仪表盘风）
+| 浅色 | 深色 |
+|------|------|
+| <img src="assets/previews/dashboard-light.png" width="600" alt="Dashboard Light"> | <img src="assets/previews/dashboard-dark.png" width="600" alt="Dashboard Dark"> |
 
 ## 快速开始
 
