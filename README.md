@@ -63,6 +63,41 @@ A collection of beautiful, responsive academic homepage templates for researcher
 |-------|------|
 | ![Glass Light](assets/previews/glass-light.png) | ![Glass Dark](assets/previews/glass-dark.png) |
 
+### Swiss
+| Light | Dark |
+|-------|------|
+| ![Swiss Light](assets/previews/swiss-light.png) | ![Swiss Dark](assets/previews/swiss-dark.png) |
+
+### Terminal
+| Light | Dark |
+|-------|------|
+| ![Terminal Light](assets/previews/terminal-light.png) | ![Terminal Dark](assets/previews/terminal-dark.png) |
+
+### Bento
+| Light | Dark |
+|-------|------|
+| ![Bento Light](assets/previews/bento-light.png) | ![Bento Dark](assets/previews/bento-dark.png) |
+
+### Ink
+| Light | Dark |
+|-------|------|
+| ![Ink Light](assets/previews/ink-light.png) | ![Ink Dark](assets/previews/ink-dark.png) |
+
+### Newspaper
+| Light | Dark |
+|-------|------|
+| ![Newspaper Light](assets/previews/newspaper-light.png) | ![Newspaper Dark](assets/previews/newspaper-dark.png) |
+
+### Bauhaus
+| Light | Dark |
+|-------|------|
+| ![Bauhaus Light](assets/previews/bauhaus-light.png) | ![Bauhaus Dark](assets/previews/bauhaus-dark.png) |
+
+### Dashboard
+| Light | Dark |
+|-------|------|
+| ![Dashboard Light](assets/previews/dashboard-light.png) | ![Dashboard Dark](assets/previews/dashboard-dark.png) |
+
 ## Quick Start
 
 1. Clone the repository
