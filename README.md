@@ -30,7 +30,7 @@ A collection of beautiful, responsive academic homepage templates for researcher
 | Theme | Design Philosophy |
 |:-----:|-------------------|
 | 📚 **Academic** | Typography-first minimalism. Every element serves the content — generous whitespace, strict hierarchy, and zero decoration let your research speak for itself. |
-| 🌿 **Natural** | Biophilic warmth meets scholarly depth. Earthy tones, organic textures, and soft curves create a calm, human reading experience far from sterile lab aesthetics. |
+| 🌿 **Natural** | Nature as visual grammar. Forest greens, stone grays, and moss textures evoke the quiet of an outdoor study — unhurried, grounded, and alive with organic detail. |
 | 📰 **Editorial** | Magazine grid logic applied to academia. Asymmetric columns, pull quotes, and editorial spacing borrow from print journalism to make research feel like a feature story. |
 | 💎 **Glass** | Depth through translucency. Frosted-glass panels, layered blur, and luminous accents build a sense of dimension — modern without being cold. |
 | 🇨🇭 **Swiss** | International Typographic Style distilled. Rigid grid, flush-left text, and geometric precision echo the Helvetica era — timeless, authoritative, and unapologetically rational. |
